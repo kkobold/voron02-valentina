@@ -182,3 +182,4 @@ Content-Type: multipart/form-data; boundary="boundary_.oOo._i/N5XTGZJLQaSyS5CADL
 2024-07-17 00:34:46,279 [klippy_apis.py:start_print()] - Requesting Job Start, filename = V0_Sherpa_Mini_Mount.gcode
 2024-07-17 00:34:46,485 [job_state.py:_status_update()] - Job Started: V0_Sherpa_Mini_Mount.gcode
 2024-07-17 00:52:40,831 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-07-17 01:37:40,842 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.2.183
