@@ -1671,3 +1671,4 @@
 2024-07-17 02:31:07,867 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
 2024-07-17 02:31:07,931 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
 2024-07-17 02:31:07,941 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 03:31:08,700 [screen.py:show_screensaver()] - Showing Screensaver
