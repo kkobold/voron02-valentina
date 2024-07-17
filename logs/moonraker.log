@@ -2593,3 +2593,1151 @@ Properties:
 2024-07-17 17:47:38,051 [websockets.py:_handle_identify()] - Websocket 547537787728 Client Identified - Name: KlipperScreen, Version: v0.4.3-37-gf4992e11, Type: display
 2024-07-17 17:47:38,141 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor skr_mini_e3_v3', 'temperature_sensor raspberry_pi_3b', 'heater_bed', 'extruder']
 2024-07-17 17:47:38,445 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-07-17 18:34:40,207 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.2.183
+2024-07-17 18:34:40,302 [application.py:log_request()] - 101 GET /websocket?token=IU2EQGFI5DT7VPJBBI4CXBGQNJ2CC44H (192.168.2.183) [_TRUSTED_USER_] 3.69ms
+2024-07-17 18:34:40,303 [websockets.py:open()] - Websocket Opened: ID: 547537789584, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 192.168.2.105
+2024-07-17 18:34:40,307 [websockets.py:_handle_identify()] - Websocket 547537789584 Client Identified - Name: fluidd, Version: 1.30.1-62fe404, Type: web
+2024-07-17 18:34:40,308 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-17 18:38:35,510 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 18:38:35,567 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:38:36,778 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:38:39,908 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 18:38:39,983 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:38:41,169 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:38:43,670 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.objects.subscribe, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:38:43,675 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 18:38:43,684 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:38:44,940 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:38:55,913 [klippy_connection.py:close()] - Error closing Klippy Unix Socket
+Traceback (most recent call last):
+  File "/home/kkobold/moonraker/moonraker/components/klippy_connection.py", line 769, in close
+    await self.writer.wait_closed()
+  File "/usr/lib/python3.11/asyncio/streams.py", line 350, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 995, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+2024-07-17 18:38:55,913 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 18:38:55,931 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:38:56,171 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:40:27,891 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-17 18:40:27,897 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-17 18:40:27,904 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2024-07-17 18:40:37,570 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 18:40:37,585 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:40:37,826 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+-------------------- Log Start | Wed Jul 17 21:41:10 2024 --------------------
+platform: Linux-6.6.31+rpt-rpi-v8-aarch64-with-glibc2.36
+data_path: /home/kkobold/printer_data
+is_default_data_path: False
+config_file: /home/kkobold/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: da3de86107214f049d8587438094e697
+unix_socket_path: /home/kkobold/printer_data/comms/moonraker.sock
+software_version: v0.8.0-385-gdc00d38
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/kkobold/printer_data/logs/moonraker.log
+python_version: 3.11.2 (main, May  2 2024, 11:59:08) [GCC 12.2.0]
+launch_args: /home/kkobold/moonraker-env/bin/python /home/kkobold/moonraker/moonraker/moonraker.py -d /home/kkobold/printer_data
+msgspec_enabled: False
+uvloop_enabled: False
+2024-07-17 18:41:10,976 [confighelper.py:read_file()] - Configuration File '/home/kkobold/printer_data/config/moonraker.conf' parsed, total size: 717 B
+2024-07-17 18:41:10,976 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/kkobold/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+#################################################################
+All Configuration Files:
+/home/kkobold/printer_data/config/moonraker.conf
+#################################################################
+2024-07-17 18:41:11,435 [server.py:load_component()] - Component (secrets) loaded
+2024-07-17 18:41:11,454 [server.py:load_component()] - Component (template) loaded
+2024-07-17 18:41:11,467 [server.py:load_component()] - Component (klippy_connection) loaded
+2024-07-17 18:41:13,721 [server.py:load_component()] - Component (application) loaded
+2024-07-17 18:41:13,801 [server.py:load_component()] - Component (websockets) loaded
+2024-07-17 18:41:14,069 [server.py:load_component()] - Component (dbus_manager) loaded
+2024-07-17 18:41:14,237 [server.py:add_log_rollover_item()] - Loading Sqlite database provider. Sqlite Version: 3.40.1
+2024-07-17 18:41:14,257 [server.py:add_log_rollover_item()] - Unsafe Shutdown Count: 10
+2024-07-17 18:41:14,263 [server.py:load_component()] - Component (database) loaded
+2024-07-17 18:41:14,329 [file_manager.py:__init__()] - Using File System Observer: inotify
+2024-07-17 18:41:14,435 [server.py:load_component()] - Component (file_manager) loaded
+2024-07-17 18:41:14,490 [database.py:register_table()] - Found registered table authorized_users
+2024-07-17 18:41:14,494 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2024-07-17 18:41:14,512 [server.py:load_component()] - Component (authorization) loaded
+2024-07-17 18:41:14,522 [server.py:load_component()] - Component (klippy_apis) loaded
+2024-07-17 18:41:14,836 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, May  2 2024, 11:59:08) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: aarch64
+  cpu_desc: 
+  serial_number: 281aa505
+  hardware_desc: 
+  model: Raspberry Pi 3 Model B Rev 1.2
+  total_memory: 929104
+  memory_units: kB
+
+***sd_info***
+  manufacturer_id: 89
+  manufacturer: Unknown
+  oem_id: 0303
+  product_name: NCard
+  product_revision: 1.0
+  serial_number: 29ffff16
+  manufacturer_date: 8/2023
+  capacity: 29.1 GiB
+  total_bytes: 31266439168
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.6.31+rpt-rpi-v8
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+2024-07-17 18:41:14,842 [server.py:load_component()] - Component (shell_command) loaded
+2024-07-17 18:41:14,842 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2024-07-17 18:41:14,855 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2024-07-17 18:41:14,856 [server.py:load_component()] - Component (machine) loaded
+2024-07-17 18:41:14,862 [server.py:load_component()] - Component (data_store) loaded
+2024-07-17 18:41:14,870 [proc_stats.py:__init__()] - Detected 'vcgencmd', throttle checking enabled
+2024-07-17 18:41:14,871 [server.py:load_component()] - Component (proc_stats) loaded
+2024-07-17 18:41:14,875 [server.py:load_component()] - Component (job_state) loaded
+2024-07-17 18:41:14,883 [server.py:load_component()] - Component (job_queue) loaded
+2024-07-17 18:41:14,890 [database.py:register_table()] - Found registered table job_history
+2024-07-17 18:41:14,891 [database.py:register_table()] - Found registered table job_totals
+2024-07-17 18:41:14,895 [server.py:load_component()] - Component (history) loaded
+2024-07-17 18:41:14,914 [server.py:load_component()] - Component (http_client) loaded
+2024-07-17 18:41:14,926 [server.py:load_component()] - Component (announcements) loaded
+2024-07-17 18:41:14,934 [server.py:load_component()] - Component (webcam) loaded
+2024-07-17 18:41:14,940 [server.py:load_component()] - Component (extensions) loaded
+2024-07-17 18:41:14,952 [server.py:load_component()] - Component (octoprint_compat) loaded
+2024-07-17 18:41:15,080 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/kkobold/moonraker-env
+2024-07-17 18:41:15,093 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/kkobold/klippy-env
+2024-07-17 18:41:15,107 [server.py:load_component()] - Component (update_manager) loaded
+2024-07-17 18:41:15,110 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2024-07-17 18:41:15,291 [server.py:_initialize_component()] - Performing Component Post Init: [database]
+2024-07-17 18:41:15,318 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2024-07-17 18:41:15,337 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2024-07-17 18:41:15,342 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2024-07-17 18:41:15,345 [machine.py:validation_init()] - Installation version in database up to date
+2024-07-17 18:41:16,209 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-07-17 18:41:16,229 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.2.105
+2024-07-17 18:41:16,231 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.2.105
+2024-07-17 18:41:16,341 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'network-online.target', 'system.slice']
+**After=['system.slice', 'basic.target', '-.mount', 'systemd-journald.socket', 'sysinit.target', 'network-online.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/kkobold/printer_data/systemd/moonraker.env
+**ExecStart=/home/kkobold/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/kkobold/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=kkobold
+2024-07-17 18:41:16,341 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-07-17 18:41:16,341 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-07-17 18:41:16,374 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-07-17 18:41:16,383 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-07-17 18:41:16,384 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.2.105
+2024-07-17 18:41:16,392 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-07-17 18:41:16,392 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2024-07-17 18:41:16,402 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['basic.target', 'system.slice', 'systemd-journald.socket', 'network-online.target', 'sysinit.target', '-.mount', 'klipper-mcu.service']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/kkobold/printer_data/systemd/klipper.env
+**ExecStart=/home/kkobold/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/kkobold/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=kkobold
+2024-07-17 18:41:17,081 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-07-17 18:41:17,084 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/kkobold/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: dc00d38b01915b9aea736999df9287b2846dd6bf
+Upstream Commit SHA: dc00d38b01915b9aea736999df9287b2846dd6bf
+Current Version: v0.8.0-385-gdc00d38b
+Upstream Version: v0.8.0-385-gdc00d38b
+Rollback Commit: dc00d38b01915b9aea736999df9287b2846dd6bf
+Rollback Branch: master
+Rollback Version: v0.8.0-385-gdc00d38b
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-07-17 18:41:17,089 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/kkobold/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 0087f04cc370cd542069940f0ed10c583de158ee
+Upstream Commit SHA: 0087f04cc370cd542069940f0ed10c583de158ee
+Current Version: v0.12.0-263-g0087f04c
+Upstream Version: v0.12.0-263-g0087f04c
+Rollback Commit: 0087f04cc370cd542069940f0ed10c583de158ee
+Rollback Branch: master
+Rollback Version: v0.12.0-263-g0087f04c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+Repo Warnings:
+  Repo has untracked source files: ['klippy/extras/gcode_shell_command.py', 'klippy/extras/led_interpolate.py', 'klippy/extras/loop_macro.py', 'klippy/extras/settling_probe.py', 'klippy/extras/state_notify.py']
+2024-07-17 18:41:17,095 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/kkobold/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Upstream Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Current Version: v1.2.0-0-gce48c585
+Upstream Version: v1.2.0-0-gce48c585
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-07-17 18:41:17,104 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/kkobold/fluidd
+Local Version: v1.30.1
+Remote Version: v1.30.1
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.30.1/fluidd.zip
+Download Size: 3726613
+Content Type: application/zip
+Rollback Version: v1.30.1
+Rollback Repo: fluidd-core/fluidd
+2024-07-17 18:41:17,107 [base_deploy.py:log_info()] - PackageKit: Next refresh in: 6 Days, 1 Hour, 5 Minutes, 40 Seconds
+2024-07-17 18:41:17,107 [base_deploy.py:log_info()] - Git Repo moonraker: Next refresh in: 6 Days, 1 Hour, 5 Minutes, 41 Seconds
+2024-07-17 18:41:17,107 [base_deploy.py:log_info()] - Git Repo klipper: Next refresh in: 6 Days, 1 Hour, 5 Minutes, 43 Seconds
+2024-07-17 18:41:17,108 [base_deploy.py:log_info()] - Git Repo fluidd-config: Next refresh in: 6 Days, 1 Hour, 7 Minutes, 24 Seconds
+2024-07-17 18:41:17,108 [base_deploy.py:log_info()] - Web Client fluidd: Next refresh in: 6 Days, 1 Hour, 7 Minutes, 25 Seconds
+2024-07-17 18:41:17,112 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/kkobold/printer_data/comms/moonraker.sock'
+2024-07-17 18:41:17,113 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: valentina
+2024-07-17 18:41:17,115 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-07-17 18:41:17,367 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:41:17,478 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['network-online.target', '-.mount', 'klipper-mcu.service', 'basic.target', 'sysinit.target', 'systemd-journald.socket', 'system.slice']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/kkobold/printer_data/systemd/klipper.env
+**ExecStart=/home/kkobold/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/kkobold/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=kkobold
+2024-07-17 18:41:17,732 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-263-g0087f04c-dirty
+2024-07-17 18:41:17,758 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-17 18:41:17,761 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-17 18:41:17,764 [klippy_connection.py:_check_ready()] - 
+MCU 'mcu' shutdown: i2c timeout
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+2024-07-17 18:41:18,392 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-07-17 18:41:18,412 [application.py:log_request()] - 101 GET /websocket?token= (127.0.0.1) [_TRUSTED_USER_] 6.84ms
+2024-07-17 18:41:18,412 [websockets.py:open()] - Websocket Opened: ID: 548058473040, Proxied: False, User Agent: , Host Name: 127.0.0.1
+2024-07-17 18:41:18,531 [websockets.py:_handle_identify()] - Websocket 548058473040 Client Identified - Name: KlipperScreen, Version: v0.4.3-37-gf4992e11, Type: display
+2024-07-17 18:41:18,990 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.2.183
+2024-07-17 18:41:19,009 [application.py:log_request()] - 101 GET /websocket?token=BSTDBA6J2VDZW62FQNQNAERZRIBEYQBP (192.168.2.183) [_TRUSTED_USER_] 2.49ms
+2024-07-17 18:41:19,010 [websockets.py:open()] - Websocket Opened: ID: 548068735824, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 192.168.2.105
+2024-07-17 18:41:19,013 [websockets.py:_handle_identify()] - Websocket 548068735824 Client Identified - Name: fluidd, Version: 1.30.1-62fe404, Type: web
+2024-07-17 18:41:19,014 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-17 18:41:32,677 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 18:41:32,696 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:41:33,944 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:41:37,260 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-17 18:41:37,262 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-17 18:41:37,264 [klippy_connection.py:_check_ready()] - 
+MCU 'mcu' shutdown: i2c timeout
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+-------------------- Log Start | Wed Jul 17 21:41:10 2024 --------------------
+platform: Linux-6.6.31+rpt-rpi-v8-aarch64-with-glibc2.36
+data_path: /home/kkobold/printer_data
+is_default_data_path: False
+config_file: /home/kkobold/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: da3de86107214f049d8587438094e697
+unix_socket_path: /home/kkobold/printer_data/comms/moonraker.sock
+software_version: v0.8.0-385-gdc00d38
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/kkobold/printer_data/logs/moonraker.log
+python_version: 3.11.2 (main, May  2 2024, 11:59:08) [GCC 12.2.0]
+launch_args: /home/kkobold/moonraker-env/bin/python /home/kkobold/moonraker/moonraker/moonraker.py -d /home/kkobold/printer_data
+msgspec_enabled: False
+uvloop_enabled: False
+2024-07-17 18:41:10,910 [confighelper.py:read_file()] - Configuration File '/home/kkobold/printer_data/config/moonraker.conf' parsed, total size: 717 B
+2024-07-17 18:41:10,911 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/kkobold/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+#################################################################
+All Configuration Files:
+/home/kkobold/printer_data/config/moonraker.conf
+#################################################################
+2024-07-17 18:41:11,311 [server.py:load_component()] - Component (secrets) loaded
+2024-07-17 18:41:11,334 [server.py:load_component()] - Component (template) loaded
+2024-07-17 18:41:11,347 [server.py:load_component()] - Component (klippy_connection) loaded
+2024-07-17 18:41:13,594 [server.py:load_component()] - Component (application) loaded
+2024-07-17 18:41:13,684 [server.py:load_component()] - Component (websockets) loaded
+2024-07-17 18:41:13,970 [server.py:load_component()] - Component (dbus_manager) loaded
+2024-07-17 18:41:14,125 [server.py:add_log_rollover_item()] - Loading Sqlite database provider. Sqlite Version: 3.40.1
+2024-07-17 18:41:14,142 [server.py:add_log_rollover_item()] - Unsafe Shutdown Count: 11
+2024-07-17 18:41:14,148 [server.py:load_component()] - Component (database) loaded
+2024-07-17 18:41:14,233 [file_manager.py:__init__()] - Using File System Observer: inotify
+2024-07-17 18:41:14,314 [server.py:load_component()] - Component (file_manager) loaded
+2024-07-17 18:41:14,372 [database.py:register_table()] - Found registered table authorized_users
+2024-07-17 18:41:14,375 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2024-07-17 18:41:14,393 [server.py:load_component()] - Component (authorization) loaded
+2024-07-17 18:41:14,401 [server.py:load_component()] - Component (klippy_apis) loaded
+2024-07-17 18:41:14,713 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, May  2 2024, 11:59:08) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: aarch64
+  cpu_desc: 
+  serial_number: 281aa505
+  hardware_desc: 
+  model: Raspberry Pi 3 Model B Rev 1.2
+  total_memory: 929104
+  memory_units: kB
+
+***sd_info***
+  manufacturer_id: 89
+  manufacturer: Unknown
+  oem_id: 0303
+  product_name: NCard
+  product_revision: 1.0
+  serial_number: 29ffff16
+  manufacturer_date: 8/2023
+  capacity: 29.1 GiB
+  total_bytes: 31266439168
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.6.31+rpt-rpi-v8
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+2024-07-17 18:41:14,723 [server.py:load_component()] - Component (shell_command) loaded
+2024-07-17 18:41:14,723 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2024-07-17 18:41:14,736 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2024-07-17 18:41:14,737 [server.py:load_component()] - Component (machine) loaded
+2024-07-17 18:41:14,743 [server.py:load_component()] - Component (data_store) loaded
+2024-07-17 18:41:14,749 [proc_stats.py:__init__()] - Detected 'vcgencmd', throttle checking enabled
+2024-07-17 18:41:14,751 [server.py:load_component()] - Component (proc_stats) loaded
+2024-07-17 18:41:14,754 [server.py:load_component()] - Component (job_state) loaded
+2024-07-17 18:41:14,763 [server.py:load_component()] - Component (job_queue) loaded
+2024-07-17 18:41:14,769 [database.py:register_table()] - Found registered table job_history
+2024-07-17 18:41:14,770 [database.py:register_table()] - Found registered table job_totals
+2024-07-17 18:41:14,774 [server.py:load_component()] - Component (history) loaded
+2024-07-17 18:41:14,793 [server.py:load_component()] - Component (http_client) loaded
+2024-07-17 18:41:14,805 [server.py:load_component()] - Component (announcements) loaded
+2024-07-17 18:41:14,813 [server.py:load_component()] - Component (webcam) loaded
+2024-07-17 18:41:14,818 [server.py:load_component()] - Component (extensions) loaded
+2024-07-17 18:41:14,830 [server.py:load_component()] - Component (octoprint_compat) loaded
+2024-07-17 18:41:14,959 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/kkobold/moonraker-env
+2024-07-17 18:41:14,971 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/kkobold/klippy-env
+2024-07-17 18:41:14,984 [server.py:load_component()] - Component (update_manager) loaded
+2024-07-17 18:41:14,987 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2024-07-17 18:41:15,162 [server.py:_initialize_component()] - Performing Component Post Init: [database]
+2024-07-17 18:41:15,220 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2024-07-17 18:41:15,239 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2024-07-17 18:41:15,245 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2024-07-17 18:41:15,252 [machine.py:validation_init()] - Installation version in database up to date
+2024-07-17 18:41:16,093 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-07-17 18:41:16,110 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.2.105
+2024-07-17 18:41:16,113 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.2.105
+2024-07-17 18:41:16,233 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['network-online.target', '-.mount', 'system.slice', 'sysinit.target']
+**After=['basic.target', '-.mount', 'network-online.target', 'system.slice', 'sysinit.target', 'systemd-journald.socket']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/kkobold/printer_data/systemd/moonraker.env
+**ExecStart=/home/kkobold/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/kkobold/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=kkobold
+2024-07-17 18:41:16,234 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-07-17 18:41:16,234 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-07-17 18:41:16,256 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-07-17 18:41:16,273 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-07-17 18:41:16,273 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.2.105
+2024-07-17 18:41:16,293 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-07-17 18:41:16,293 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2024-07-17 18:41:16,302 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['network-online.target', '-.mount', 'klipper-mcu.service', 'basic.target', 'sysinit.target', 'systemd-journald.socket', 'system.slice']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/kkobold/printer_data/systemd/klipper.env
+**ExecStart=/home/kkobold/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/kkobold/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=kkobold
+2024-07-17 18:41:16,973 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-07-17 18:41:16,977 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/kkobold/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: dc00d38b01915b9aea736999df9287b2846dd6bf
+Upstream Commit SHA: dc00d38b01915b9aea736999df9287b2846dd6bf
+Current Version: v0.8.0-385-gdc00d38b
+Upstream Version: v0.8.0-385-gdc00d38b
+Rollback Commit: dc00d38b01915b9aea736999df9287b2846dd6bf
+Rollback Branch: master
+Rollback Version: v0.8.0-385-gdc00d38b
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-07-17 18:41:16,981 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/kkobold/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 0087f04cc370cd542069940f0ed10c583de158ee
+Upstream Commit SHA: 0087f04cc370cd542069940f0ed10c583de158ee
+Current Version: v0.12.0-263-g0087f04c
+Upstream Version: v0.12.0-263-g0087f04c
+Rollback Commit: 0087f04cc370cd542069940f0ed10c583de158ee
+Rollback Branch: master
+Rollback Version: v0.12.0-263-g0087f04c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+Repo Warnings:
+  Repo has untracked source files: ['klippy/extras/gcode_shell_command.py', 'klippy/extras/led_interpolate.py', 'klippy/extras/loop_macro.py', 'klippy/extras/settling_probe.py', 'klippy/extras/state_notify.py']
+2024-07-17 18:41:16,988 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/kkobold/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Upstream Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Current Version: v1.2.0-0-gce48c585
+Upstream Version: v1.2.0-0-gce48c585
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-07-17 18:41:16,997 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/kkobold/fluidd
+Local Version: v1.30.1
+Remote Version: v1.30.1
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.30.1/fluidd.zip
+Download Size: 3726613
+Content Type: application/zip
+Rollback Version: v1.30.1
+Rollback Repo: fluidd-core/fluidd
+2024-07-17 18:41:16,998 [base_deploy.py:log_info()] - PackageKit: Next refresh in: 6 Days, 1 Hour, 5 Minutes, 41 Seconds
+2024-07-17 18:41:16,998 [base_deploy.py:log_info()] - Git Repo moonraker: Next refresh in: 6 Days, 1 Hour, 5 Minutes, 42 Seconds
+2024-07-17 18:41:16,998 [base_deploy.py:log_info()] - Git Repo klipper: Next refresh in: 6 Days, 1 Hour, 5 Minutes, 43 Seconds
+2024-07-17 18:41:16,998 [base_deploy.py:log_info()] - Git Repo fluidd-config: Next refresh in: 6 Days, 1 Hour, 7 Minutes, 24 Seconds
+2024-07-17 18:41:16,999 [base_deploy.py:log_info()] - Web Client fluidd: Next refresh in: 6 Days, 1 Hour, 7 Minutes, 25 Seconds
+2024-07-17 18:41:17,004 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/kkobold/printer_data/comms/moonraker.sock'
+2024-07-17 18:41:17,007 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: valentina
+2024-07-17 18:41:17,008 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-07-17 18:41:17,263 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:41:17,366 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount']
+**After=['-.mount', 'network-online.target', 'systemd-journald.socket', 'system.slice', 'basic.target', 'klipper-mcu.service', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/kkobold/printer_data/systemd/klipper.env
+**ExecStart=/home/kkobold/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/kkobold/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=kkobold
+2024-07-17 18:41:17,620 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-263-g0087f04c-dirty
+2024-07-17 18:41:17,645 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-17 18:41:17,647 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-17 18:41:17,651 [klippy_connection.py:_check_ready()] - 
+MCU 'mcu' shutdown: i2c timeout
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+2024-07-17 18:41:18,226 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-07-17 18:41:18,245 [application.py:log_request()] - 101 GET /websocket?token= (127.0.0.1) [_TRUSTED_USER_] 6.30ms
+2024-07-17 18:41:18,245 [websockets.py:open()] - Websocket Opened: ID: 547874078288, Proxied: False, User Agent: , Host Name: 127.0.0.1
+2024-07-17 18:41:18,367 [websockets.py:_handle_identify()] - Websocket 547874078288 Client Identified - Name: KlipperScreen, Version: v0.4.3-37-gf4992e11, Type: display
+2024-07-17 18:41:49,512 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.2.183
+2024-07-17 18:41:49,561 [application.py:log_request()] - 101 GET /websocket?token=6VJGZHU3SPUPMN62AYHADPUC6QIBE72U (192.168.2.183) [_TRUSTED_USER_] 4.24ms
+2024-07-17 18:41:49,563 [websockets.py:open()] - Websocket Opened: ID: 547863883408, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 192.168.2.105
+2024-07-17 18:41:49,567 [websockets.py:_handle_identify()] - Websocket 547863883408 Client Identified - Name: fluidd, Version: 1.30.1-62fe404, Type: web
+2024-07-17 18:41:49,568 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-17 18:41:52,177 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 18:41:52,191 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:41:53,438 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:44:53,849 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-17 18:44:53,852 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-17 18:44:53,856 [klippy_connection.py:_check_ready()] - 
+MCU 'mcu' shutdown: i2c timeout
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+2024-07-17 18:46:33,663 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 18:46:33,683 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:46:34,928 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:48:06,463 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-17 18:48:06,467 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-17 18:48:06,473 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2024-07-17 18:52:44,090 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 18:52:44,105 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:52:45,351 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:52:51,622 [klippy_connection.py:close()] - Error closing Klippy Unix Socket
+Traceback (most recent call last):
+  File "/home/kkobold/moonraker/moonraker/components/klippy_connection.py", line 769, in close
+    await self.writer.wait_closed()
+  File "/usr/lib/python3.11/asyncio/streams.py", line 350, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 995, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+2024-07-17 18:52:51,622 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 18:52:51,634 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 18:52:51,876 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+-------------------- Log Start | Wed Jul 17 21:52:52 2024 --------------------
+platform: Linux-6.6.31+rpt-rpi-v8-aarch64-with-glibc2.36
+data_path: /home/kkobold/printer_data
+is_default_data_path: False
+config_file: /home/kkobold/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: da3de86107214f049d8587438094e697
+unix_socket_path: /home/kkobold/printer_data/comms/moonraker.sock
+software_version: v0.8.0-385-gdc00d38
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/kkobold/printer_data/logs/moonraker.log
+python_version: 3.11.2 (main, May  2 2024, 11:59:08) [GCC 12.2.0]
+launch_args: /home/kkobold/moonraker-env/bin/python /home/kkobold/moonraker/moonraker/moonraker.py -d /home/kkobold/printer_data
+msgspec_enabled: False
+uvloop_enabled: False
+2024-07-17 18:52:52,949 [confighelper.py:read_file()] - Configuration File '/home/kkobold/printer_data/config/moonraker.conf' parsed, total size: 717 B
+2024-07-17 18:52:52,949 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/kkobold/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+#################################################################
+All Configuration Files:
+/home/kkobold/printer_data/config/moonraker.conf
+#################################################################
+2024-07-17 18:52:53,378 [server.py:load_component()] - Component (secrets) loaded
+2024-07-17 18:52:53,398 [server.py:load_component()] - Component (template) loaded
+2024-07-17 18:52:53,411 [server.py:load_component()] - Component (klippy_connection) loaded
+2024-07-17 18:52:55,664 [server.py:load_component()] - Component (application) loaded
+2024-07-17 18:52:55,755 [server.py:load_component()] - Component (websockets) loaded
+2024-07-17 18:52:56,039 [server.py:load_component()] - Component (dbus_manager) loaded
+2024-07-17 18:52:56,197 [server.py:add_log_rollover_item()] - Loading Sqlite database provider. Sqlite Version: 3.40.1
+2024-07-17 18:52:56,214 [server.py:add_log_rollover_item()] - Unsafe Shutdown Count: 12
+2024-07-17 18:52:56,219 [server.py:load_component()] - Component (database) loaded
+2024-07-17 18:52:56,303 [file_manager.py:__init__()] - Using File System Observer: inotify
+2024-07-17 18:52:56,379 [server.py:load_component()] - Component (file_manager) loaded
+2024-07-17 18:52:56,439 [database.py:register_table()] - Found registered table authorized_users
+2024-07-17 18:52:56,443 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2024-07-17 18:52:56,460 [server.py:load_component()] - Component (authorization) loaded
+2024-07-17 18:52:56,469 [server.py:load_component()] - Component (klippy_apis) loaded
+2024-07-17 18:52:56,783 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, May  2 2024, 11:59:08) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: aarch64
+  cpu_desc: 
+  serial_number: 281aa505
+  hardware_desc: 
+  model: Raspberry Pi 3 Model B Rev 1.2
+  total_memory: 929104
+  memory_units: kB
+
+***sd_info***
+  manufacturer_id: 89
+  manufacturer: Unknown
+  oem_id: 0303
+  product_name: NCard
+  product_revision: 1.0
+  serial_number: 29ffff16
+  manufacturer_date: 8/2023
+  capacity: 29.1 GiB
+  total_bytes: 31266439168
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.6.31+rpt-rpi-v8
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+2024-07-17 18:52:56,788 [server.py:load_component()] - Component (shell_command) loaded
+2024-07-17 18:52:56,789 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2024-07-17 18:52:56,803 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2024-07-17 18:52:56,803 [server.py:load_component()] - Component (machine) loaded
+2024-07-17 18:52:56,811 [server.py:load_component()] - Component (data_store) loaded
+2024-07-17 18:52:56,818 [proc_stats.py:__init__()] - Detected 'vcgencmd', throttle checking enabled
+2024-07-17 18:52:56,819 [server.py:load_component()] - Component (proc_stats) loaded
+2024-07-17 18:52:56,822 [server.py:load_component()] - Component (job_state) loaded
+2024-07-17 18:52:56,832 [server.py:load_component()] - Component (job_queue) loaded
+2024-07-17 18:52:56,838 [database.py:register_table()] - Found registered table job_history
+2024-07-17 18:52:56,839 [database.py:register_table()] - Found registered table job_totals
+2024-07-17 18:52:56,843 [server.py:load_component()] - Component (history) loaded
+2024-07-17 18:52:56,863 [server.py:load_component()] - Component (http_client) loaded
+2024-07-17 18:52:56,874 [server.py:load_component()] - Component (announcements) loaded
+2024-07-17 18:52:56,882 [server.py:load_component()] - Component (webcam) loaded
+2024-07-17 18:52:56,888 [server.py:load_component()] - Component (extensions) loaded
+2024-07-17 18:52:56,899 [server.py:load_component()] - Component (octoprint_compat) loaded
+2024-07-17 18:52:57,028 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/kkobold/moonraker-env
+2024-07-17 18:52:57,040 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/kkobold/klippy-env
+2024-07-17 18:52:57,053 [server.py:load_component()] - Component (update_manager) loaded
+2024-07-17 18:52:57,056 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2024-07-17 18:52:57,237 [server.py:_initialize_component()] - Performing Component Post Init: [database]
+2024-07-17 18:52:57,286 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2024-07-17 18:52:57,307 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2024-07-17 18:52:57,312 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2024-07-17 18:52:57,315 [machine.py:validation_init()] - Installation version in database up to date
+2024-07-17 18:52:58,124 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-07-17 18:52:58,143 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.2.105
+2024-07-17 18:52:58,145 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.2.105
+2024-07-17 18:52:58,246 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['network-online.target', 'sysinit.target', 'system.slice', '-.mount']
+**After=['sysinit.target', '-.mount', 'basic.target', 'system.slice', 'network-online.target', 'systemd-journald.socket']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/kkobold/printer_data/systemd/moonraker.env
+**ExecStart=/home/kkobold/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/kkobold/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=kkobold
+2024-07-17 18:52:58,246 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-07-17 18:52:58,246 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-07-17 18:52:58,262 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-07-17 18:52:58,274 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-07-17 18:52:58,274 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.2.105
+2024-07-17 18:52:58,278 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-07-17 18:52:58,279 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2024-07-17 18:52:58,290 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount']
+**After=['-.mount', 'network-online.target', 'systemd-journald.socket', 'system.slice', 'basic.target', 'klipper-mcu.service', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/kkobold/printer_data/systemd/klipper.env
+**ExecStart=/home/kkobold/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/kkobold/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=kkobold
+2024-07-17 18:52:58,964 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-07-17 18:52:58,967 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/kkobold/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: dc00d38b01915b9aea736999df9287b2846dd6bf
+Upstream Commit SHA: dc00d38b01915b9aea736999df9287b2846dd6bf
+Current Version: v0.8.0-385-gdc00d38b
+Upstream Version: v0.8.0-385-gdc00d38b
+Rollback Commit: dc00d38b01915b9aea736999df9287b2846dd6bf
+Rollback Branch: master
+Rollback Version: v0.8.0-385-gdc00d38b
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-07-17 18:52:58,970 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/kkobold/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 0087f04cc370cd542069940f0ed10c583de158ee
+Upstream Commit SHA: 0087f04cc370cd542069940f0ed10c583de158ee
+Current Version: v0.12.0-263-g0087f04c
+Upstream Version: v0.12.0-263-g0087f04c
+Rollback Commit: 0087f04cc370cd542069940f0ed10c583de158ee
+Rollback Branch: master
+Rollback Version: v0.12.0-263-g0087f04c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+Repo Warnings:
+  Repo has untracked source files: ['klippy/extras/gcode_shell_command.py', 'klippy/extras/led_interpolate.py', 'klippy/extras/loop_macro.py', 'klippy/extras/settling_probe.py', 'klippy/extras/state_notify.py']
+2024-07-17 18:52:58,974 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/kkobold/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Upstream Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Current Version: v1.2.0-0-gce48c585
+Upstream Version: v1.2.0-0-gce48c585
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-07-17 18:52:58,983 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/kkobold/fluidd
+Local Version: v1.30.1
+Remote Version: v1.30.1
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.30.1/fluidd.zip
+Download Size: 3726613
+Content Type: application/zip
+Rollback Version: v1.30.1
+Rollback Repo: fluidd-core/fluidd
+2024-07-17 18:52:58,983 [base_deploy.py:log_info()] - PackageKit: Next refresh in: 6 Days, 53 Minutes, 59 Seconds
+2024-07-17 18:52:58,984 [base_deploy.py:log_info()] - Git Repo moonraker: Next refresh in: 6 Days, 54 Minutes
+2024-07-17 18:52:58,984 [base_deploy.py:log_info()] - Git Repo klipper: Next refresh in: 6 Days, 54 Minutes, 1 Second
+2024-07-17 18:52:58,984 [base_deploy.py:log_info()] - Git Repo fluidd-config: Next refresh in: 6 Days, 55 Minutes, 42 Seconds
+2024-07-17 18:52:58,984 [base_deploy.py:log_info()] - Web Client fluidd: Next refresh in: 6 Days, 55 Minutes, 43 Seconds
+2024-07-17 18:52:58,989 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/kkobold/printer_data/comms/moonraker.sock'
+2024-07-17 18:52:58,991 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: valentina
+2024-07-17 18:52:58,993 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-07-17 18:52:59,247 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 18:52:59,353 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['-.mount', 'systemd-journald.socket', 'system.slice', 'basic.target', 'network-online.target', 'sysinit.target', 'klipper-mcu.service']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/kkobold/printer_data/systemd/klipper.env
+**ExecStart=/home/kkobold/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/kkobold/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=kkobold
+2024-07-17 18:52:59,607 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-263-g0087f04c-dirty
+2024-07-17 18:52:59,634 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-17 18:52:59,637 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-17 18:52:59,641 [klippy_connection.py:_check_ready()] - 
+Unknown i2c_bus 'i2c1_PB8_PB9'
+
+Once the underlying issue is corrected, use the "RESTART"
+command to reload the config and restart the host software.
+Printer is halted
+
+2024-07-17 18:53:00,248 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-07-17 18:53:00,267 [application.py:log_request()] - 101 GET /websocket?token= (127.0.0.1) [_TRUSTED_USER_] 6.52ms
+2024-07-17 18:53:00,268 [websockets.py:open()] - Websocket Opened: ID: 548543153424, Proxied: False, User Agent: , Host Name: 127.0.0.1
+2024-07-17 18:53:00,388 [websockets.py:_handle_identify()] - Websocket 548543153424 Client Identified - Name: KlipperScreen, Version: v0.4.3-37-gf4992e11, Type: display
+2024-07-17 18:56:21,230 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.2.183
+2024-07-17 18:56:21,283 [application.py:log_request()] - 101 GET /websocket?token=2MH7JESIA25ZJC4EIHEU23V3APPSEIB3 (192.168.2.183) [_TRUSTED_USER_] 3.67ms
+2024-07-17 18:56:21,283 [websockets.py:open()] - Websocket Opened: ID: 548543152976, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 192.168.2.105
+2024-07-17 18:56:21,286 [websockets.py:_handle_identify()] - Websocket 548543152976 Client Identified - Name: fluidd, Version: 1.30.1-62fe404, Type: web
+2024-07-17 18:56:21,289 [file_manager.py:get_file_list()] - Updating File List <config>...
