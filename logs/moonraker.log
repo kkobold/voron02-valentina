@@ -1882,3 +1882,8 @@ Properties:
 2024-07-16 22:47:33,558 [websockets.py:_handle_identify()] - Websocket 548494968528 Client Identified - Name: KlipperScreen, Version: v0.4.3-37-gf4992e11, Type: display
 2024-07-16 22:47:33,818 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2024-07-16 22:47:34,123 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-07-16 22:59:06,616 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.2.183
+2024-07-16 22:59:06,658 [application.py:log_request()] - 101 GET /websocket?token=3QTLEEHZLNAEDKWK5L2FZAZK5VMX5AFZ (192.168.2.183) [_TRUSTED_USER_] 2.38ms
+2024-07-16 22:59:06,659 [websockets.py:open()] - Websocket Opened: ID: 548494941456, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 192.168.2.105
+2024-07-16 22:59:06,661 [websockets.py:_handle_identify()] - Websocket 548494941456 Client Identified - Name: fluidd, Version: 1.30.1-62fe404, Type: web
+2024-07-16 22:59:06,662 [file_manager.py:get_file_list()] - Updating File List <config>...
