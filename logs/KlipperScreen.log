@@ -1672,3 +1672,123 @@
 2024-07-17 02:31:07,931 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
 2024-07-17 02:31:07,941 [screen.py:set_screenblanking_timeout()] - Using DPMS
 2024-07-17 03:31:08,700 [screen.py:show_screensaver()] - Showing Screensaver
+2024-07-17 06:28:48,900 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2024-07-17 06:28:48,900 [functions.py:log_start()] - KlipperScreen Version: v0.4.3-37-gf4992e11
+2024-07-17 06:28:48,900 [functions.py:log_start()] - Python version: 3.11
+2024-07-17 06:28:49,176 [config.py:get_config_file_location()] - Passed config (-c): .
+2024-07-17 06:28:49,179 [config.py:__init__()] - Config path location: /home/kkobold/KlipperScreen/config/defaults.conf
+2024-07-17 06:28:49,183 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/main_menu.conf']
+2024-07-17 06:28:49,211 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/splash_menu.conf']
+2024-07-17 06:28:49,217 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/print_menu.conf']
+2024-07-17 06:28:49,228 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/move_menu.conf']
+2024-07-17 06:28:49,238 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_api_key": ""
+    }
+  }
+]
+2024-07-17 06:28:49,466 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2024-07-17 06:28:49,466 [config.py:install_language()] - Using lang en
+2024-07-17 06:28:49,503 [screen.py:__init__()] - Monitors: 1 using number: 0
+2024-07-17 06:28:49,505 [screen.py:__init__()] - Wayland: False Display name: :0
+2024-07-17 06:28:49,508 [screen.py:__init__()] - Screen resolution: 1024x768
+2024-07-17 06:28:49,799 [KlippyGtk.py:__init__()] - Font size: 25.6 (medium)
+2024-07-17 06:28:50,741 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 06:28:50,752 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 06:28:50,761 [screen.py:initial_connection()] - Default printer: None
+2024-07-17 06:28:50,832 [screen.py:connect_printer()] - Connecting to printer: Printer
+2024-07-17 06:28:50,833 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 06:28:50,896 [screen.py:_load_panel()] - Loading panel: splash_screen
+2024-07-17 06:28:50,982 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-17 06:28:51,025 [KlippyWebsocket.py:connect()] - Attempting to connect
+2024-07-17 06:28:51,025 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2024-07-17 06:28:51,039 [_logging.py:info()] - Websocket connected
+2024-07-17 06:28:51,039 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2024-07-17 06:28:51,114 [screen.py:websocket_connected()] - ### websocket_connected
+2024-07-17 06:28:51,156 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2024-07-17 06:28:51,171 [printer.py:configure_cameras()] - Cameras: []
+2024-07-17 06:28:51,184 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-17 06:28:51,453 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-17 06:28:51,453 [printer.py:log_counts()] - # Extruders: 1
+2024-07-17 06:28:51,453 [printer.py:log_counts()] - # Temperature devices: 1
+2024-07-17 06:28:51,454 [printer.py:log_counts()] - # Fans: 1
+2024-07-17 06:28:51,454 [printer.py:log_counts()] - # Output pins: 0
+2024-07-17 06:28:51,454 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-17 06:28:51,454 [printer.py:log_counts()] - # Leds: 0
+2024-07-17 06:28:51,708 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-17 06:28:51,710 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-17 06:28:51,710 [screen.py:init_klipper()] - Printer initialized
+2024-07-17 06:28:51,711 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2024-07-17 06:28:51,711 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-17 06:28:51,722 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 06:28:51,733 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 06:28:51,742 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2024-07-17 06:28:51,745 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 06:28:51,812 [screen.py:_load_panel()] - Loading panel: main_menu
+2024-07-17 06:28:51,994 [main_menu.py:__init__()] - ### Making MainMenu
+2024-07-17 06:28:52,007 [main_menu.py:add_device()] - Adding device: extruder
+2024-07-17 06:28:52,017 [main_menu.py:add_device()] - Adding device: heater_bed
+2024-07-17 06:28:52,054 [menu.py:arrangeMenuItems()] - X > gcodes
+2024-07-17 06:28:52,078 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2024-07-17 06:28:52,106 [printer.py:init_temp_store()] - Temp store: ['heater_bed', 'extruder']
+2024-07-17 06:28:52,121 [screen.py:init_tempstore()] - Temperature store size: 1200
+2024-07-17 06:29:31,075 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-17 06:29:31,076 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-17 06:29:31,100 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 06:29:31,112 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 06:29:31,121 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 06:29:31,192 [screen.py:_load_panel()] - Loading panel: job_status
+2024-07-17 06:29:31,424 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-17 06:29:31,435 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 06:29:31,464 [job_status.py:update_filename()] - Updating filename to V0_Sherpa_Mini_Mount.gcode
+2024-07-17 06:29:31,472 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_Sherpa_Mini_Mount.gcode Size: 4767633
+2024-07-17 06:29:31,473 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-17 06:32:31,990 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-17 06:32:32,089 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-17 06:32:32,089 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-17 06:32:32,104 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2024-07-17 06:32:32,170 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 06:32:32,181 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 06:35:04,538 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'standby'
+2024-07-17 06:35:23,328 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-17 06:35:23,328 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-17 06:35:23,342 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 06:35:23,418 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 06:35:23,440 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 06:35:23,453 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-17 06:35:23,453 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 06:35:23,524 [screen.py:show_panel()] - Reinitializing panel job_status
+2024-07-17 06:35:23,719 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-17 06:35:23,730 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 06:35:23,753 [job_status.py:update_filename()] - Updating filename to V0_Sherpa_Mini_Mount.gcode
+2024-07-17 06:35:23,754 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_Sherpa_Mini_Mount.gcode Size: 4767633
+2024-07-17 06:35:23,756 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-17 06:35:23,779 [screen.py:attach_panel()] - Current panel hierarchy: job_status > job_status
+2024-07-17 06:35:44,221 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-17 06:36:46,550 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-17 06:36:46,550 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-17 06:36:46,565 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2024-07-17 06:36:46,607 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 06:36:46,617 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 06:41:32,350 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'standby'
+2024-07-17 06:41:35,351 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-17 06:41:35,352 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-17 06:41:35,367 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 06:41:35,452 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 06:41:35,462 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 06:41:35,471 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-17 06:41:35,474 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 06:41:35,542 [screen.py:show_panel()] - Reinitializing panel job_status
+2024-07-17 06:41:35,741 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-17 06:41:35,754 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 06:41:35,778 [job_status.py:update_filename()] - Updating filename to V0_Sherpa_Mini_Mount.gcode
+2024-07-17 06:41:35,779 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_Sherpa_Mini_Mount.gcode Size: 4767633
+2024-07-17 06:41:35,780 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-17 06:41:35,804 [screen.py:attach_panel()] - Current panel hierarchy: job_status > job_status
+2024-07-17 06:41:46,177 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-17 06:46:13,749 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 06:49:43,731 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 06:53:11,091 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
