@@ -1152,3 +1152,5 @@ Error configuring printer
 2024-07-17 08:39:34,126 [klippy_connection.py:_check_ready()] - Klippy ready
 2024-07-17 08:39:34,617 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor skr_mini_e3_v3', 'temperature_sensor raspberry_pi_3b', 'heater_bed', 'extruder']
 2024-07-17 08:39:34,688 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-07-17 09:42:49,331 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-07-17 09:42:49,331 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.2.183

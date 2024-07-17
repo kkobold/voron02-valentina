@@ -2448,3 +2448,4 @@
 2024-07-17 08:39:35,677 [heatergraph.py:draw_graph()] - Tempstore not initialized!
 2024-07-17 08:39:35,717 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor skr_mini_e3_v3', 'temperature_sensor raspberry_pi_3b', 'heater_bed', 'extruder']
 2024-07-17 08:39:35,731 [screen.py:init_tempstore()] - Temperature store size: 1200
+2024-07-17 09:39:34,766 [screen.py:show_screensaver()] - Showing Screensaver
