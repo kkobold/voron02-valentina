@@ -1,0 +1,573 @@
+2024-07-16 20:18:16,267 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2024-07-16 20:18:16,267 [functions.py:log_start()] - KlipperScreen Version: v0.4.3-37-gf4992e11
+2024-07-16 20:18:16,267 [functions.py:log_start()] - Python version: 3.11
+2024-07-16 20:18:16,494 [config.py:get_config_file_location()] - Passed config (-c): .
+2024-07-16 20:18:16,495 [config.py:__init__()] - Config path location: /home/kkobold/KlipperScreen/config/defaults.conf
+2024-07-16 20:18:16,510 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/main_menu.conf']
+2024-07-16 20:18:16,524 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/splash_menu.conf']
+2024-07-16 20:18:16,529 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/print_menu.conf']
+2024-07-16 20:18:16,539 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/move_menu.conf']
+2024-07-16 20:18:16,547 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_api_key": ""
+    }
+  }
+]
+2024-07-16 20:18:16,717 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2024-07-16 20:18:16,717 [config.py:install_language()] - Using lang en
+2024-07-16 20:18:16,748 [screen.py:__init__()] - Monitors: 1 using number: 0
+2024-07-16 20:18:16,749 [screen.py:__init__()] - Wayland: False Display name: :0
+2024-07-16 20:18:16,752 [screen.py:__init__()] - Screen resolution: 1024x768
+2024-07-16 20:18:17,019 [KlippyGtk.py:__init__()] - Font size: 25.6 (medium)
+2024-07-16 20:18:17,698 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:18:17,711 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:18:17,720 [screen.py:initial_connection()] - Default printer: None
+2024-07-16 20:18:17,791 [screen.py:connect_printer()] - Connecting to printer: Printer
+2024-07-16 20:18:17,792 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:18:17,854 [screen.py:_load_panel()] - Loading panel: splash_screen
+2024-07-16 20:18:17,940 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:18:17,978 [KlippyWebsocket.py:connect()] - Attempting to connect
+2024-07-16 20:18:17,979 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2024-07-16 20:18:17,989 [_logging.py:info()] - Websocket connected
+2024-07-16 20:18:17,990 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2024-07-16 20:18:17,995 [screen.py:websocket_connected()] - ### websocket_connected
+2024-07-16 20:18:18,042 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2024-07-16 20:18:18,057 [printer.py:configure_cameras()] - Cameras: []
+2024-07-16 20:18:18,070 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:18:18,327 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:18:18,327 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:18:18,327 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:18:18,327 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:18:18,327 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:18:18,328 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:18:18,328 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:18:18,579 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:18:18,580 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:18:18,580 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:18:18,581 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-16 20:18:18,581 [printer.py:change_state()] - Adding callback for state: error
+2024-07-16 20:18:18,675 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:18:18,689 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:18:18,701 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:18:18,702 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:18:18,781 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:18:18,887 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:18:18,903 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:20:21,788 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-16 20:20:21,789 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:20:21,798 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:20:21,817 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:20:21,833 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:20:21,834 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:20:21,837 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:20:21,912 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:20:21,998 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:20:22,016 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:20:26,387 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:20:26,531 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:20:26,532 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:20:26,532 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:20:26,532 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:20:26,532 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:20:26,532 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:20:26,533 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:20:26,785 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:20:26,787 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:20:26,787 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:20:26,787 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-16 20:20:26,788 [printer.py:change_state()] - Adding callback for state: error
+2024-07-16 20:20:26,801 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:20:26,814 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:20:26,827 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:20:26,829 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:20:26,907 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:20:26,995 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:20:27,010 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:32:56,598 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-16 20:32:56,598 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:32:56,615 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:32:56,627 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:32:56,638 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:32:56,638 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:32:56,640 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:32:56,714 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:32:56,798 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:32:56,816 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:33:01,388 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:33:01,633 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:33:01,634 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:33:01,634 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:33:01,634 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:33:01,635 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:33:01,635 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:33:01,635 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:33:01,887 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:33:01,889 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:33:01,890 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:33:01,890 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-16 20:33:01,891 [printer.py:change_state()] - Adding callback for state: error
+2024-07-16 20:33:01,907 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:33:01,924 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:33:01,938 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:33:01,940 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:33:02,023 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:33:02,099 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:33:02,116 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:34:41,454 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-16 20:34:41,455 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:34:41,477 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:34:41,492 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:34:41,505 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:34:41,505 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:34:41,509 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:34:41,585 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:34:41,670 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:34:41,688 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:34:44,674 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:34:44,912 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:34:44,913 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:34:44,913 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:34:44,913 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:34:44,913 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:34:44,914 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:34:44,914 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:34:45,168 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:34:45,169 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:34:45,169 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:34:45,170 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2024-07-16 20:34:45,170 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-16 20:34:45,180 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:34:45,191 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:34:45,200 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2024-07-16 20:34:45,203 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:34:45,272 [screen.py:_load_panel()] - Loading panel: main_menu
+2024-07-16 20:34:45,470 [main_menu.py:__init__()] - ### Making MainMenu
+2024-07-16 20:34:45,492 [menu.py:arrangeMenuItems()] - X > temperature
+2024-07-16 20:34:45,496 [menu.py:arrangeMenuItems()] - X > extrude
+2024-07-16 20:34:45,503 [menu.py:arrangeMenuItems()] - X > print
+2024-07-16 20:34:45,518 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2024-07-16 20:34:46,395 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:34:46,675 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:34:46,675 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:34:46,676 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:34:46,676 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:34:46,676 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:34:46,676 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:34:46,677 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:34:46,924 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:34:46,926 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:34:46,926 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:38:08,599 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2024-07-16 20:38:08,599 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:38:08,611 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:38:08,640 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:38:08,652 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:38:08,652 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:38:08,737 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:38:08,824 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:38:11,843 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:38:12,081 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:38:12,081 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:38:12,081 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:38:12,081 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:38:12,081 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:38:12,082 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:38:12,082 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:38:12,337 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:38:12,338 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:38:12,339 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:38:12,339 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2024-07-16 20:38:12,339 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-16 20:38:12,349 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:38:12,360 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:38:12,369 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2024-07-16 20:38:12,372 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:38:12,439 [screen.py:show_panel()] - Reinitializing panel main_menu
+2024-07-16 20:38:12,573 [main_menu.py:__init__()] - ### Making MainMenu
+2024-07-16 20:38:12,597 [menu.py:arrangeMenuItems()] - X > temperature
+2024-07-16 20:38:12,602 [menu.py:arrangeMenuItems()] - X > extrude
+2024-07-16 20:38:12,609 [menu.py:arrangeMenuItems()] - X > print
+2024-07-16 20:38:12,622 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2024-07-16 20:38:13,380 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:38:13,592 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:38:13,593 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:38:13,593 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:38:13,593 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:38:13,593 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:38:13,594 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:38:13,594 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:38:13,848 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:38:13,850 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:38:13,851 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:38:27,410 [screen.py:show_popup_message()] - error: // Unknown command:"SET_KINEMATIC_POSITION"
+2024-07-16 20:39:25,040 [screen.py:show_popup_message()] - error: // Unknown command:"SET_KINEMATIC_POSITION"
+2024-07-16 20:40:06,012 [screen.py:show_popup_message()] - error: // Unknown command:"FORCE_MOVE"
+2024-07-16 20:40:11,685 [printer.py:change_state()] - Changing state from 'ready' to 'shutdown'
+2024-07-16 20:40:11,686 [printer.py:change_state()] - Adding callback for state: shutdown
+2024-07-16 20:40:11,703 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:40:11,722 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:40:11,735 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:40:11,823 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:40:11,899 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:40:21,633 [printer.py:change_state()] - Changing state from 'shutdown' to 'disconnected'
+2024-07-16 20:40:21,634 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:40:21,654 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:40:21,672 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:40:21,689 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:40:21,689 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:40:21,690 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:40:21,780 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:40:21,872 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:40:21,888 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:40:24,797 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:40:25,037 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:40:25,037 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:40:25,037 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:40:25,038 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:40:25,038 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:40:25,038 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:40:25,038 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:40:25,287 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:40:25,288 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:40:25,288 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:40:25,289 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2024-07-16 20:40:25,289 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-16 20:40:25,300 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:40:25,310 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:40:25,319 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2024-07-16 20:40:25,322 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:40:25,391 [screen.py:show_panel()] - Reinitializing panel main_menu
+2024-07-16 20:40:25,522 [main_menu.py:__init__()] - ### Making MainMenu
+2024-07-16 20:40:25,565 [menu.py:arrangeMenuItems()] - X > temperature
+2024-07-16 20:40:25,575 [menu.py:arrangeMenuItems()] - X > extrude
+2024-07-16 20:40:25,583 [menu.py:arrangeMenuItems()] - X > print
+2024-07-16 20:40:25,596 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2024-07-16 20:40:26,403 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:40:26,540 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:40:26,541 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:40:26,541 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:40:26,541 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:40:26,541 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:40:26,541 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:40:26,541 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:40:26,799 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:40:26,801 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:40:26,802 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:49:49,145 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2024-07-16 20:49:49,145 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:49:49,154 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:49:49,184 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:49:49,197 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:49:49,198 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:49:49,286 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:49:49,374 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:49:53,428 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:49:53,602 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:49:53,602 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:49:53,603 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:49:53,603 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:49:53,603 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:49:53,603 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:49:53,603 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:49:53,853 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:49:53,855 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:49:53,855 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:49:53,855 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-16 20:49:53,855 [printer.py:change_state()] - Adding callback for state: error
+2024-07-16 20:49:53,865 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:49:53,875 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:49:53,884 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:49:53,885 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:49:53,950 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:49:54,024 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:49:54,039 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:52:16,232 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-16 20:52:16,233 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:52:16,243 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:52:16,272 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:52:16,286 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:52:16,287 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:52:16,289 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:52:16,367 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:52:16,455 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:52:16,474 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:52:20,406 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:52:20,441 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:52:20,441 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:52:20,442 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:52:20,442 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:52:20,442 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:52:20,442 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:52:20,442 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:52:20,694 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:52:20,695 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:52:20,695 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:52:20,695 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-16 20:52:20,695 [printer.py:change_state()] - Adding callback for state: error
+2024-07-16 20:52:20,705 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:52:20,715 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:52:20,724 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:52:20,726 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:52:20,791 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:52:20,866 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:52:20,881 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:52:37,947 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-16 20:52:37,947 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:52:37,964 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:52:37,985 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:52:37,997 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:52:37,997 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:52:38,000 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:52:38,080 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:52:38,165 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:52:38,184 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:52:42,410 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'startup', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:52:42,442 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:52:42,443 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:52:42,443 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:52:42,443 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:52:42,443 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:52:42,443 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:52:42,443 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:52:42,694 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:52:42,696 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:52:42,696 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:52:42,696 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-16 20:52:42,697 [printer.py:change_state()] - Adding callback for state: error
+2024-07-16 20:52:42,707 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:52:42,717 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:52:42,726 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:52:42,728 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:52:42,795 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:52:42,871 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:52:42,886 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:52:59,602 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-16 20:52:59,603 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:52:59,622 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:52:59,641 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:52:59,655 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:52:59,656 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:52:59,659 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:52:59,737 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:52:59,824 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:52:59,843 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:53:04,413 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'shutdown', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:53:04,576 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:53:04,577 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:53:04,577 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:53:04,577 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:53:04,577 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:53:04,577 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:53:04,577 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:53:04,837 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:53:04,839 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:53:04,839 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:53:04,840 [printer.py:change_state()] - Changing state from 'disconnected' to 'shutdown'
+2024-07-16 20:53:04,841 [printer.py:change_state()] - Adding callback for state: shutdown
+2024-07-16 20:53:04,858 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:53:04,876 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:53:04,892 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:53:04,895 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:53:04,981 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:53:05,069 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:53:05,104 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:55:26,634 [printer.py:change_state()] - Changing state from 'shutdown' to 'disconnected'
+2024-07-16 20:55:26,634 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:55:26,651 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:55:26,678 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:55:26,689 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:55:26,690 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:55:26,692 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:55:26,772 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:55:26,861 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:55:26,879 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:55:31,419 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:55:31,671 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:55:31,671 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:55:31,671 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:55:31,672 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:55:31,672 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:55:31,672 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:55:31,672 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:55:31,930 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:55:31,932 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:55:31,932 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:55:31,933 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-16 20:55:31,933 [printer.py:change_state()] - Adding callback for state: error
+2024-07-16 20:55:31,949 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:55:31,965 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:55:31,979 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:55:31,982 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:55:32,058 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:55:32,135 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:55:32,150 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:55:32,907 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-16 20:55:32,907 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:55:32,919 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:55:32,947 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:55:32,961 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:55:32,961 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:55:32,963 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:55:33,053 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:55:33,141 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:55:33,161 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:55:37,441 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:55:37,578 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:55:37,578 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:55:37,579 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:55:37,579 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:55:37,579 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:55:37,579 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:55:37,579 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:55:37,835 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:55:37,837 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:55:37,837 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:55:37,838 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-16 20:55:37,839 [printer.py:change_state()] - Adding callback for state: error
+2024-07-16 20:55:37,856 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:55:37,872 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:55:37,886 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:55:37,889 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:55:37,971 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:55:38,048 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:55:38,063 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:56:05,168 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-16 20:56:05,168 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:56:05,179 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:56:05,207 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:56:05,219 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:56:05,219 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:56:05,222 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:56:05,300 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:56:05,386 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:56:05,404 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:56:09,429 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:56:09,673 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:56:09,673 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:56:09,674 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:56:09,674 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:56:09,674 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:56:09,674 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:56:09,674 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:56:09,925 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:56:09,926 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:56:09,926 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:56:09,927 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-16 20:56:09,927 [printer.py:change_state()] - Adding callback for state: error
+2024-07-16 20:56:09,937 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:56:09,947 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:56:09,956 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:56:09,958 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:56:10,022 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:56:10,097 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:56:10,112 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:56:13,065 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-16 20:56:13,065 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:56:13,079 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:56:13,097 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:56:13,113 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:56:13,113 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:56:13,116 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:56:13,196 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:56:13,270 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:56:13,285 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:56:17,423 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:56:17,479 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:56:17,479 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:56:17,479 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:56:17,479 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:56:17,479 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:56:17,480 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:56:17,480 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:56:17,731 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:56:17,732 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:56:17,733 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:56:17,733 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-16 20:56:17,733 [printer.py:change_state()] - Adding callback for state: error
+2024-07-16 20:56:17,743 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:56:17,753 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:56:17,762 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:56:17,764 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:56:17,829 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:56:17,905 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:56:17,920 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:57:04,472 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-16 20:57:04,472 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:57:04,485 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:57:04,502 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:57:04,513 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:57:04,513 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:57:04,515 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:57:04,590 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:57:04,675 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:57:04,693 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:57:09,427 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'shutdown', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:57:09,660 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:57:09,660 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:57:09,661 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:57:09,661 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:57:09,661 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:57:09,662 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:57:09,662 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:57:09,911 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:57:09,913 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:57:09,913 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:57:09,914 [printer.py:change_state()] - Changing state from 'disconnected' to 'shutdown'
+2024-07-16 20:57:09,914 [printer.py:change_state()] - Adding callback for state: shutdown
+2024-07-16 20:57:09,929 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:57:09,945 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:57:09,959 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:57:09,962 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:57:10,041 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:57:10,120 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:57:10,135 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:57:15,821 [printer.py:change_state()] - Changing state from 'shutdown' to 'disconnected'
+2024-07-16 20:57:15,822 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-16 20:57:15,836 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:57:15,852 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:57:15,874 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-16 20:57:15,874 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 20:57:15,876 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:57:15,963 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-16 20:57:16,058 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 20:57:16,081 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-16 20:57:18,987 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:57:19,233 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:57:19,233 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:57:19,233 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:57:19,234 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:57:19,234 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:57:19,234 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:57:19,234 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:57:19,475 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:57:19,477 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:57:19,477 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:57:19,477 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2024-07-16 20:57:19,478 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-16 20:57:19,544 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 20:57:19,555 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 20:57:19,564 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2024-07-16 20:57:19,567 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 20:57:19,635 [screen.py:show_panel()] - Reinitializing panel main_menu
+2024-07-16 20:57:19,791 [main_menu.py:__init__()] - ### Making MainMenu
+2024-07-16 20:57:19,813 [menu.py:arrangeMenuItems()] - X > temperature
+2024-07-16 20:57:19,817 [menu.py:arrangeMenuItems()] - X > extrude
+2024-07-16 20:57:19,824 [menu.py:arrangeMenuItems()] - X > print
+2024-07-16 20:57:19,837 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2024-07-16 20:57:20,430 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 20:57:20,482 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 20:57:20,482 [printer.py:log_counts()] - # Extruders: 0
+2024-07-16 20:57:20,482 [printer.py:log_counts()] - # Temperature devices: 0
+2024-07-16 20:57:20,483 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 20:57:20,483 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 20:57:20,483 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 20:57:20,483 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 20:57:20,725 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 20:57:20,726 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 20:57:20,726 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 20:57:21,797 [screen.py:show_popup_message()] - error: Endstop x still triggered after retract
+2024-07-16 20:57:28,848 [screen.py:show_popup_message()] - error: Endstop x still triggered after retract
+2024-07-16 20:57:34,678 [screen.py:show_popup_message()] - error: Endstop x still triggered after retract
