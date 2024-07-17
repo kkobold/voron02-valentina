@@ -1348,3 +1348,276 @@
 2024-07-16 22:47:34,457 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
 2024-07-16 22:47:34,485 [printer.py:init_temp_store()] - Temp store: ['heater_bed', 'extruder']
 2024-07-16 22:47:34,499 [screen.py:init_tempstore()] - Temperature store size: 1200
+2024-07-16 23:09:14,382 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-16 23:09:14,383 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-16 23:09:14,400 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:09:14,412 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:09:14,423 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 23:09:14,494 [screen.py:_load_panel()] - Loading panel: job_status
+2024-07-16 23:09:14,787 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-16 23:09:14,798 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-16 23:09:14,826 [job_status.py:update_filename()] - Updating filename to V0_[a]_klicky_dock_bottom_x1.gcode
+2024-07-16 23:09:14,834 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_[a]_klicky_dock_bottom_x1.gcode Size: 636903
+2024-07-16 23:09:14,835 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-16 23:09:15,288 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-16 23:09:50,691 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:09:59,767 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-16 23:09:59,767 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-16 23:09:59,787 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2024-07-16 23:09:59,855 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:09:59,871 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:10:05,349 [screen.py:show_popup_message()] - error: Move out of range: 55.002 63.241 -49.600 [38.562]
+2024-07-16 23:13:28,572 [screen.py:show_popup_message()] - error: Move out of range: 110.000 63.241 -50.000 [38.562]
+2024-07-16 23:13:43,341 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-16 23:13:43,429 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-16 23:13:43,430 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-16 23:13:43,443 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'printing'
+2024-07-16 23:13:43,519 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:13:43,529 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:13:43,538 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 23:13:43,539 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 23:13:43,609 [screen.py:show_panel()] - Reinitializing panel job_status
+2024-07-16 23:13:43,812 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-16 23:13:43,823 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-16 23:13:43,844 [job_status.py:update_filename()] - Updating filename to V0_[a]_klicky_dock_bottom_x1.gcode
+2024-07-16 23:13:43,846 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_[a]_klicky_dock_bottom_x1.gcode Size: 636903
+2024-07-16 23:13:43,847 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-16 23:13:43,872 [screen.py:attach_panel()] - Current panel hierarchy: job_status > job_status
+2024-07-16 23:14:13,506 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-16 23:14:13,506 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-16 23:14:13,517 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2024-07-16 23:14:13,557 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:14:13,567 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:14:21,237 [screen.py:show_popup_message()] - error: Move out of range: 64.618 62.709 -49.800 [66.255]
+2024-07-16 23:28:39,154 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2024-07-16 23:28:39,155 [functions.py:log_start()] - KlipperScreen Version: v0.4.3-37-gf4992e11
+2024-07-16 23:28:39,155 [functions.py:log_start()] - Python version: 3.11
+2024-07-16 23:28:39,427 [config.py:get_config_file_location()] - Passed config (-c): .
+2024-07-16 23:28:39,428 [config.py:__init__()] - Config path location: /home/kkobold/KlipperScreen/config/defaults.conf
+2024-07-16 23:28:39,432 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/main_menu.conf']
+2024-07-16 23:28:39,460 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/splash_menu.conf']
+2024-07-16 23:28:39,468 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/print_menu.conf']
+2024-07-16 23:28:39,483 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/move_menu.conf']
+2024-07-16 23:28:39,499 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_api_key": ""
+    }
+  }
+]
+2024-07-16 23:28:39,718 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2024-07-16 23:28:39,718 [config.py:install_language()] - Using lang en
+2024-07-16 23:28:39,764 [screen.py:__init__()] - Monitors: 1 using number: 0
+2024-07-16 23:28:39,766 [screen.py:__init__()] - Wayland: False Display name: :0
+2024-07-16 23:28:39,770 [screen.py:__init__()] - Screen resolution: 1024x768
+2024-07-16 23:28:40,057 [KlippyGtk.py:__init__()] - Font size: 25.6 (medium)
+2024-07-16 23:28:40,992 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:28:41,004 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:28:41,013 [screen.py:initial_connection()] - Default printer: None
+2024-07-16 23:28:41,085 [screen.py:connect_printer()] - Connecting to printer: Printer
+2024-07-16 23:28:41,086 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 23:28:41,152 [screen.py:_load_panel()] - Loading panel: splash_screen
+2024-07-16 23:28:41,236 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-16 23:28:41,278 [KlippyWebsocket.py:connect()] - Attempting to connect
+2024-07-16 23:28:41,279 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2024-07-16 23:28:41,294 [_logging.py:info()] - Websocket connected
+2024-07-16 23:28:41,295 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2024-07-16 23:28:41,369 [screen.py:websocket_connected()] - ### websocket_connected
+2024-07-16 23:28:41,411 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2024-07-16 23:28:41,427 [printer.py:configure_cameras()] - Cameras: []
+2024-07-16 23:28:41,440 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-16 23:28:41,595 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-16 23:28:41,595 [printer.py:log_counts()] - # Extruders: 1
+2024-07-16 23:28:41,595 [printer.py:log_counts()] - # Temperature devices: 1
+2024-07-16 23:28:41,595 [printer.py:log_counts()] - # Fans: 0
+2024-07-16 23:28:41,595 [printer.py:log_counts()] - # Output pins: 0
+2024-07-16 23:28:41,595 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-16 23:28:41,596 [printer.py:log_counts()] - # Leds: 0
+2024-07-16 23:28:41,850 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-16 23:28:41,852 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-16 23:28:41,853 [screen.py:init_klipper()] - Printer initialized
+2024-07-16 23:28:41,853 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2024-07-16 23:28:41,853 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-16 23:28:41,865 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:28:41,875 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:28:41,885 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2024-07-16 23:28:41,888 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 23:28:41,955 [screen.py:_load_panel()] - Loading panel: main_menu
+2024-07-16 23:28:42,137 [main_menu.py:__init__()] - ### Making MainMenu
+2024-07-16 23:28:42,150 [main_menu.py:add_device()] - Adding device: extruder
+2024-07-16 23:28:42,161 [main_menu.py:add_device()] - Adding device: heater_bed
+2024-07-16 23:28:42,197 [menu.py:arrangeMenuItems()] - X > gcodes
+2024-07-16 23:28:42,222 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2024-07-16 23:28:42,250 [printer.py:init_temp_store()] - Temp store: ['heater_bed', 'extruder']
+2024-07-16 23:28:42,264 [screen.py:init_tempstore()] - Temperature store size: 1200
+2024-07-16 23:35:45,200 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-16 23:35:45,200 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-16 23:35:45,229 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:35:45,246 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:35:45,259 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 23:35:45,347 [screen.py:_load_panel()] - Loading panel: job_status
+2024-07-16 23:35:45,579 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-16 23:35:45,590 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-16 23:35:45,617 [job_status.py:update_filename()] - Updating filename to V0_[a]_klicky_dock_bottom_x1.gcode
+2024-07-16 23:35:45,625 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_[a]_klicky_dock_bottom_x1.gcode Size: 636903
+2024-07-16 23:35:45,641 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-16 23:35:50,039 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-16 23:36:36,259 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:37:01,930 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-16 23:37:01,931 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-16 23:37:01,945 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2024-07-16 23:37:01,985 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:37:01,996 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:37:24,266 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'standby'
+2024-07-16 23:37:26,509 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-16 23:37:26,509 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-16 23:37:26,523 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-16 23:37:26,597 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:37:26,612 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:37:26,624 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 23:37:26,624 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 23:37:26,695 [screen.py:show_panel()] - Reinitializing panel job_status
+2024-07-16 23:37:26,890 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-16 23:37:26,902 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-16 23:37:26,923 [job_status.py:update_filename()] - Updating filename to V0_[a]_klicky_dock_bottom_x1.gcode
+2024-07-16 23:37:26,924 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_[a]_klicky_dock_bottom_x1.gcode Size: 636903
+2024-07-16 23:37:26,939 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-16 23:37:26,964 [screen.py:attach_panel()] - Current panel hierarchy: job_status > job_status
+2024-07-16 23:38:18,454 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-16 23:38:57,139 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:08,678 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:10,951 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:12,873 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:15,913 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:18,289 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:27,925 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:28,991 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:30,033 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:32,729 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:35,956 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:42:37,221 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:43:00,423 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:46:36,904 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_END"
+2024-07-16 23:46:37,129 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-16 23:46:37,129 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-16 23:46:37,146 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2024-07-16 23:46:37,195 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:46:37,206 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:47:42,104 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'standby'
+2024-07-16 23:47:44,345 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-16 23:47:44,346 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-16 23:47:44,352 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-16 23:47:44,405 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:47:44,415 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:47:44,424 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 23:47:44,427 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 23:47:44,497 [screen.py:show_panel()] - Reinitializing panel job_status
+2024-07-16 23:47:44,694 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-16 23:47:44,705 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-16 23:47:44,726 [job_status.py:update_filename()] - Updating filename to V0_[a]_klicky_dock_bottom_x1.gcode
+2024-07-16 23:47:44,728 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_[a]_klicky_dock_bottom_x1.gcode Size: 636903
+2024-07-16 23:47:44,742 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-16 23:47:44,766 [screen.py:attach_panel()] - Current panel hierarchy: job_status > job_status
+2024-07-16 23:48:48,181 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-16 23:49:27,309 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:52:38,848 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:52:41,120 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:52:43,033 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:52:46,084 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:52:48,457 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:52:58,087 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:52:59,160 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:53:00,205 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:53:02,905 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:53:06,124 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:53:07,392 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:53:30,588 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-16 23:57:07,061 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_END"
+2024-07-16 23:57:07,213 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-16 23:57:07,213 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-16 23:57:07,229 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2024-07-16 23:57:07,284 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:57:07,299 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:57:16,347 [screen.py:show_popup_message()] - error: Move out of range: 67.209 65.757 -44.600 [785.993]
+2024-07-16 23:57:17,517 [screen.py:show_popup_message()] - error: Move out of range: 67.209 65.757 -44.600 [785.993]
+2024-07-16 23:58:37,380 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_[a]_klicky_dock_bottom_x1.gcode Size: 608775
+2024-07-16 23:58:37,381 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-16 23:58:37,489 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-16 23:58:37,489 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-16 23:58:37,497 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'printing'
+2024-07-16 23:58:37,549 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-16 23:58:37,559 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-16 23:58:37,568 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-16 23:58:37,572 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-16 23:58:37,643 [screen.py:show_panel()] - Reinitializing panel job_status
+2024-07-16 23:58:37,849 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-16 23:58:37,861 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-16 23:58:37,882 [job_status.py:update_filename()] - Updating filename to V0_[a]_klicky_dock_bottom_x1.gcode
+2024-07-16 23:58:37,883 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_[a]_klicky_dock_bottom_x1.gcode Size: 608775
+2024-07-16 23:58:37,884 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-16 23:58:37,909 [screen.py:attach_panel()] - Current panel hierarchy: job_status > job_status
+2024-07-16 23:59:08,390 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-16 23:59:35,416 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:02:46,097 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:02:48,370 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:02:50,279 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:02:53,333 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:02:55,726 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:03:05,333 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:03:06,410 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:03:07,451 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:03:10,154 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:03:13,372 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:03:14,641 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:03:37,839 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:07:14,313 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_END"
+2024-07-17 00:07:14,437 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-17 00:07:14,437 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-17 00:07:14,454 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2024-07-17 00:07:14,522 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 00:07:14,532 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 00:08:10,242 [screen.py:show_popup_message()] - error: Move out of range: 67.209 65.757 -44.600 [1124.453]
+2024-07-17 00:33:04,937 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-17 00:33:04,938 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-17 00:33:04,947 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'printing'
+2024-07-17 00:33:04,958 [job_status.py:update_filename()] - Updating filename to V0_Sherpa_Mini_Mount.gcode
+2024-07-17 00:33:04,959 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_Sherpa_Mini_Mount.gcode Size: 4766917
+2024-07-17 00:33:04,961 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-17 00:33:05,009 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 00:33:05,019 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 00:33:05,028 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-17 00:33:05,031 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 00:33:05,100 [screen.py:show_panel()] - Reinitializing panel job_status
+2024-07-17 00:33:05,304 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-17 00:33:05,315 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 00:33:05,335 [job_status.py:update_filename()] - Updating filename to V0_Sherpa_Mini_Mount.gcode
+2024-07-17 00:33:05,337 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_Sherpa_Mini_Mount.gcode Size: 4766917
+2024-07-17 00:33:05,338 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-17 00:33:05,362 [screen.py:attach_panel()] - Current panel hierarchy: job_status > job_status
+2024-07-17 00:33:10,865 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-17 00:33:50,815 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-17 00:33:50,815 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-17 00:33:50,834 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2024-07-17 00:33:50,898 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 00:33:50,914 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 00:34:44,495 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'standby'
+2024-07-17 00:34:46,488 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-17 00:34:46,488 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-17 00:34:46,493 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 00:34:46,551 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 00:34:46,562 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 00:34:46,571 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-17 00:34:46,574 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 00:34:46,642 [screen.py:show_panel()] - Reinitializing panel job_status
+2024-07-17 00:34:46,842 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-17 00:34:46,853 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 00:34:46,874 [job_status.py:update_filename()] - Updating filename to V0_Sherpa_Mini_Mount.gcode
+2024-07-17 00:34:46,876 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_Sherpa_Mini_Mount.gcode Size: 4766917
+2024-07-17 00:34:46,877 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-17 00:34:46,901 [screen.py:attach_panel()] - Current panel hierarchy: job_status > job_status
+2024-07-17 00:34:49,295 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-17 00:39:17,052 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:43:04,600 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 00:46:49,360 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
