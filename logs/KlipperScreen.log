@@ -1658,3 +1658,16 @@
 2024-07-17 01:58:28,739 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
 2024-07-17 01:59:07,991 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
 2024-07-17 01:59:46,072 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 02:03:23,868 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 02:03:25,058 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 02:03:26,869 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 02:03:28,205 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 02:03:30,932 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 02:03:33,883 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 02:03:37,737 [screen.py:show_popup_message()] - error: // Unknown command:"M106"
+2024-07-17 02:31:07,744 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_END"
+2024-07-17 02:31:07,851 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-17 02:31:07,851 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-17 02:31:07,867 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2024-07-17 02:31:07,931 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 02:31:07,941 [screen.py:set_screenblanking_timeout()] - Using DPMS
