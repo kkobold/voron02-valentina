@@ -2806,3 +2806,68 @@
 2024-07-17 11:45:12,375 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
 2024-07-17 11:45:12,409 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor skr_mini_e3_v3', 'temperature_sensor raspberry_pi_3b', 'heater_bed', 'extruder']
 2024-07-17 11:45:12,423 [screen.py:init_tempstore()] - Temperature store size: 1200
+2024-07-17 17:47:35,750 [functions.py:log_start()] - --------------------KlipperScreen Log Start--------------------
+2024-07-17 17:47:35,750 [functions.py:log_start()] - KlipperScreen Version: v0.4.3-37-gf4992e11
+2024-07-17 17:47:35,751 [functions.py:log_start()] - Python version: 3.11
+2024-07-17 17:47:36,033 [config.py:get_config_file_location()] - Passed config (-c): .
+2024-07-17 17:47:36,035 [config.py:__init__()] - Config path location: /home/kkobold/KlipperScreen/config/defaults.conf
+2024-07-17 17:47:36,039 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/main_menu.conf']
+2024-07-17 17:47:36,070 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/splash_menu.conf']
+2024-07-17 17:47:36,076 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/print_menu.conf']
+2024-07-17 17:47:36,088 [config.py:_include_config()] - Parsing files: ['/home/kkobold/KlipperScreen/config/move_menu.conf']
+2024-07-17 17:47:36,105 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_api_key": ""
+    }
+  }
+]
+2024-07-17 17:47:36,367 [config.py:create_translations()] - Selected lang: system_lang OS lang: en_US
+2024-07-17 17:47:36,368 [config.py:install_language()] - Using lang en
+2024-07-17 17:47:36,403 [screen.py:__init__()] - Monitors: 1 using number: 0
+2024-07-17 17:47:36,405 [screen.py:__init__()] - Wayland: False Display name: :0
+2024-07-17 17:47:36,409 [screen.py:__init__()] - Screen resolution: 1024x768
+2024-07-17 17:47:36,691 [KlippyGtk.py:__init__()] - Font size: 25.6 (medium)
+2024-07-17 17:47:37,629 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 17:47:37,641 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 17:47:37,655 [screen.py:initial_connection()] - Default printer: None
+2024-07-17 17:47:37,728 [screen.py:connect_printer()] - Connecting to printer: Printer
+2024-07-17 17:47:37,728 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 17:47:37,792 [screen.py:_load_panel()] - Loading panel: splash_screen
+2024-07-17 17:47:37,874 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-17 17:47:37,917 [KlippyWebsocket.py:connect()] - Attempting to connect
+2024-07-17 17:47:37,918 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2024-07-17 17:47:37,932 [_logging.py:info()] - Websocket connected
+2024-07-17 17:47:37,933 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2024-07-17 17:47:38,006 [screen.py:websocket_connected()] - ### websocket_connected
+2024-07-17 17:47:38,048 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2024-07-17 17:47:38,064 [printer.py:configure_cameras()] - Cameras: []
+2024-07-17 17:47:38,076 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-17 17:47:38,154 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-17 17:47:38,155 [printer.py:log_counts()] - # Extruders: 1
+2024-07-17 17:47:38,155 [printer.py:log_counts()] - # Temperature devices: 3
+2024-07-17 17:47:38,155 [printer.py:log_counts()] - # Fans: 1
+2024-07-17 17:47:38,155 [printer.py:log_counts()] - # Output pins: 0
+2024-07-17 17:47:38,155 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-17 17:47:38,155 [printer.py:log_counts()] - # Leds: 0
+2024-07-17 17:47:38,410 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-17 17:47:38,411 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-17 17:47:38,411 [screen.py:init_klipper()] - Printer initialized
+2024-07-17 17:47:38,412 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2024-07-17 17:47:38,412 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-17 17:47:38,423 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 17:47:38,434 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 17:47:38,443 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2024-07-17 17:47:38,446 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 17:47:38,513 [screen.py:_load_panel()] - Loading panel: main_menu
+2024-07-17 17:47:38,697 [main_menu.py:__init__()] - ### Making MainMenu
+2024-07-17 17:47:38,710 [main_menu.py:add_device()] - Adding device: extruder
+2024-07-17 17:47:38,723 [main_menu.py:add_device()] - Adding device: heater_bed
+2024-07-17 17:47:38,734 [main_menu.py:add_device()] - Adding device: temperature_sensor skr_mini_e3_v3
+2024-07-17 17:47:38,743 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi_3b
+2024-07-17 17:47:38,777 [menu.py:arrangeMenuItems()] - X > gcodes
+2024-07-17 17:47:38,808 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2024-07-17 17:47:38,842 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor skr_mini_e3_v3', 'temperature_sensor raspberry_pi_3b', 'heater_bed', 'extruder']
+2024-07-17 17:47:38,856 [screen.py:init_tempstore()] - Temperature store size: 1200
