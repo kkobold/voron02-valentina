@@ -7673,3 +7673,41 @@ Properties:
 2024-07-17 22:57:57,365 [websockets.py:open()] - Websocket Opened: ID: 548368343568, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 192.168.2.105
 2024-07-17 22:57:57,368 [websockets.py:_handle_identify()] - Websocket 548368343568 Client Identified - Name: fluidd, Version: 1.30.1-62fe404, Type: web
 2024-07-17 22:57:57,369 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-17 23:02:00,480 [websockets.py:on_close()] - Websocket Closed: ID: 548368343568 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.11
+2024-07-17 23:02:00,637 [application.py:log_request()] - 101 GET /websocket?token=DA6F4ROSF5XPWUYHU7VFOJ3RXDQKCMCQ (192.168.2.183) [_TRUSTED_USER_] 4.03ms
+2024-07-17 23:02:00,638 [websockets.py:open()] - Websocket Opened: ID: 548359488144, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 192.168.2.105
+2024-07-17 23:02:00,641 [websockets.py:_handle_identify()] - Websocket 548359488144 Client Identified - Name: fluidd, Version: 1.30.1-62fe404, Type: web
+2024-07-17 23:02:00,642 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-17 23:02:07,725 [klippy_apis.py:start_print()] - Requesting Job Start, filename = V0_housing_core_x1_rev16.gcode
+2024-07-17 23:02:07,935 [job_state.py:_status_update()] - Job Started: V0_housing_core_x1_rev16.gcode
+2024-07-17 23:02:39,676 [klippy_apis.py:start_print()] - Requesting Job Start, filename = V0_housing_core_x1_rev16.gcode
+2024-07-17 23:02:39,774 [job_state.py:_status_update()] - Job Started: V0_housing_core_x1_rev16.gcode
+2024-07-17 23:08:45,047 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-07-17 23:08:48,772 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 38.204 54.017 -49.600 [178.274]
+2024-07-17 23:10:51,404 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 120.000 120.000 220.000 [178.274]
+2024-07-17 23:11:47,803 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 10.000 110.000 -100.000 [178.274]
+2024-07-17 23:14:07,901 [klippy_apis.py:start_print()] - Requesting Job Start, filename = V0_housing_core_x1_rev16.gcode
+2024-07-17 23:14:07,957 [job_state.py:_status_update()] - Job Started: V0_housing_core_x1_rev16.gcode
+2024-07-17 23:22:06,643 [websockets.py:on_close()] - Websocket Closed: ID: 548359488144 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.00
+2024-07-17 23:22:11,324 [application.py:log_request()] - 101 GET /websocket?token=A7TDUH472OPUXGOPL4XD4VXN4JTC7O3G (192.168.2.183) [_TRUSTED_USER_] 4.29ms
+2024-07-17 23:22:11,325 [websockets.py:open()] - Websocket Opened: ID: 548359053904, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 192.168.2.105
+2024-07-17 23:22:11,329 [websockets.py:_handle_identify()] - Websocket 548359053904 Client Identified - Name: fluidd, Version: 1.30.1-62fe404, Type: web
+2024-07-17 23:22:11,330 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-17 23:22:24,929 [websockets.py:on_close()] - Websocket Closed: ID: 548359053904 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.60
+2024-07-17 23:22:41,603 [application.py:log_request()] - 101 GET /websocket?token=IVUROZNKHNXL3QTKWDLIEYMUPSHHFJCF (192.168.2.183) [_TRUSTED_USER_] 3.29ms
+2024-07-17 23:22:41,604 [websockets.py:open()] - Websocket Opened: ID: 548359490384, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 192.168.2.105
+2024-07-17 23:22:41,607 [websockets.py:_handle_identify()] - Websocket 548359490384 Client Identified - Name: fluidd, Version: 1.30.1-62fe404, Type: web
+2024-07-17 23:22:41,608 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-17 23:43:41,491 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-07-17 23:44:18,844 [klippy_apis.py:start_print()] - Requesting Job Start, filename = V0_housing_core_x1_rev16.gcode
+2024-07-17 23:44:18,905 [job_state.py:_status_update()] - Job Started: V0_housing_core_x1_rev16.gcode
+2024-07-17 23:52:16,692 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-07-17 23:53:42,704 [application.py:prepare()] - Upload Request Received from 192.168.2.183
+Content-Type: multipart/form-data; boundary="boundary_.oOo._Qo+1wSRCTz5C4T9ojh8Unr075GnHQjLQ"
+2024-07-17 23:53:42,970 [application.py:post()] - Processing Uploaded File: V0_housing_core_x1_rev16.gcode
+2024-07-17 23:53:43,665 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-07-17 23:53:43,869 [shell_command.py:_check_proc_success()] - Command (/home/kkobold/moonraker-env/bin/python /home/kkobold/moonraker/moonraker/components/file_manager/metadata.py -p /home/kkobold/printer_data/gcodes -f "V0_housing_core_x1_rev16.gcode") successfully finished
+2024-07-17 23:53:43,869 [klippy_apis.py:start_print()] - Requesting Job Start, filename = V0_housing_core_x1_rev16.gcode
+2024-07-17 23:53:43,884 [application.py:log_request()] - 201 POST /server/files/upload (192.168.2.183) [_TRUSTED_USER_] 1181.86ms
+2024-07-17 23:53:43,986 [job_state.py:_status_update()] - Job Started: V0_housing_core_x1_rev16.gcode
