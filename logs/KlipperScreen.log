@@ -3903,3 +3903,137 @@
 2024-07-17 19:55:16,195 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
 2024-07-17 19:55:16,228 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor skr_mini_e3_v3', 'temperature_sensor raspberry_pi_3b', 'heater_bed', 'extruder']
 2024-07-17 19:55:16,243 [screen.py:init_tempstore()] - Temperature store size: 1200
+2024-07-17 20:06:03,835 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-17 20:06:03,836 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-17 20:06:03,852 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 20:06:03,862 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 20:06:03,872 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 20:06:03,947 [screen.py:_load_panel()] - Loading panel: job_status
+2024-07-17 20:06:04,305 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-17 20:06:04,318 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 20:06:04,347 [job_status.py:update_filename()] - Updating filename to V0_housing_rear_x1_rev17.gcode
+2024-07-17 20:06:04,355 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_housing_rear_x1_rev17.gcode Size: 4759121
+2024-07-17 20:06:04,357 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-17 20:06:04,685 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-17 20:06:04,847 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-17 20:06:04,847 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-17 20:06:04,865 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2024-07-17 20:06:04,927 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 20:06:04,938 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 20:08:02,144 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'standby'
+2024-07-17 20:08:03,922 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-17 20:08:03,922 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-17 20:08:03,937 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 20:08:03,997 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 20:08:04,007 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 20:08:04,017 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-17 20:08:04,017 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 20:08:04,096 [screen.py:show_panel()] - Reinitializing panel job_status
+2024-07-17 20:08:04,306 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-17 20:08:04,319 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 20:08:04,340 [job_status.py:update_filename()] - Updating filename to V0_housing_rear_x1_rev17.gcode
+2024-07-17 20:08:04,342 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_housing_rear_x1_rev17.gcode Size: 4759121
+2024-07-17 20:08:04,343 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-17 20:08:04,377 [screen.py:attach_panel()] - Current panel hierarchy: job_status > job_status
+2024-07-17 20:08:13,806 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-17 20:31:17,325 [printer.py:change_state()] - Changing state from 'printing' to 'shutdown'
+2024-07-17 20:31:17,326 [printer.py:change_state()] - Adding callback for state: shutdown
+2024-07-17 20:31:17,383 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 20:31:17,395 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 20:31:17,406 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 20:31:17,480 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-17 20:31:17,557 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-17 20:31:37,369 [printer.py:change_state()] - Changing state from 'shutdown' to 'disconnected'
+2024-07-17 20:31:37,370 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-17 20:31:37,379 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 20:31:37,392 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 20:31:37,404 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-17 20:31:37,404 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-17 20:31:37,404 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 20:31:37,478 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-17 20:31:37,552 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-17 20:31:37,567 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-17 20:31:41,938 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'error', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-17 20:31:42,045 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-17 20:31:42,046 [printer.py:log_counts()] - # Extruders: 1
+2024-07-17 20:31:42,046 [printer.py:log_counts()] - # Temperature devices: 3
+2024-07-17 20:31:42,046 [printer.py:log_counts()] - # Fans: 1
+2024-07-17 20:31:42,046 [printer.py:log_counts()] - # Output pins: 0
+2024-07-17 20:31:42,046 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-17 20:31:42,047 [printer.py:log_counts()] - # Leds: 0
+2024-07-17 20:31:42,304 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-17 20:31:42,306 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-17 20:31:42,306 [screen.py:init_klipper()] - Printer initialized
+2024-07-17 20:31:42,307 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2024-07-17 20:31:42,307 [printer.py:change_state()] - Adding callback for state: error
+2024-07-17 20:31:42,327 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 20:31:42,345 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 20:31:42,357 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-17 20:31:42,360 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 20:31:42,445 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-17 20:31:42,522 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-17 20:31:42,572 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-17 20:31:48,141 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2024-07-17 20:31:48,141 [printer.py:change_state()] - Adding callback for state: disconnected
+2024-07-17 20:31:48,157 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 20:31:48,182 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 20:31:48,196 [screen.py:state_disconnected()] - ### Going to disconnected
+2024-07-17 20:31:48,197 [screen.py:_menu_go_back()] - #### Menu go home
+2024-07-17 20:31:48,199 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 20:31:48,284 [screen.py:show_panel()] - Reinitializing panel splash_screen
+2024-07-17 20:31:48,359 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-07-17 20:31:48,374 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen > splash_screen
+2024-07-17 20:31:52,062 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-17 20:31:52,300 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-17 20:31:52,301 [printer.py:log_counts()] - # Extruders: 1
+2024-07-17 20:31:52,301 [printer.py:log_counts()] - # Temperature devices: 3
+2024-07-17 20:31:52,301 [printer.py:log_counts()] - # Fans: 1
+2024-07-17 20:31:52,301 [printer.py:log_counts()] - # Output pins: 0
+2024-07-17 20:31:52,301 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-17 20:31:52,301 [printer.py:log_counts()] - # Leds: 0
+2024-07-17 20:31:52,557 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-17 20:31:52,558 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-17 20:31:52,558 [screen.py:init_klipper()] - Printer initialized
+2024-07-17 20:31:52,558 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2024-07-17 20:31:52,559 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-17 20:31:52,570 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 20:31:52,580 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 20:31:52,589 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2024-07-17 20:31:52,593 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 20:31:52,663 [screen.py:show_panel()] - Reinitializing panel main_menu
+2024-07-17 20:31:52,810 [main_menu.py:__init__()] - ### Making MainMenu
+2024-07-17 20:31:52,823 [main_menu.py:add_device()] - Adding device: extruder
+2024-07-17 20:31:52,832 [main_menu.py:add_device()] - Adding device: heater_bed
+2024-07-17 20:31:52,843 [main_menu.py:add_device()] - Adding device: temperature_sensor skr_mini_e3_v3
+2024-07-17 20:31:52,852 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi_3b
+2024-07-17 20:31:52,886 [menu.py:arrangeMenuItems()] - X > gcodes
+2024-07-17 20:31:52,917 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2024-07-17 20:31:52,963 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor skr_mini_e3_v3', 'temperature_sensor raspberry_pi_3b', 'heater_bed', 'extruder']
+2024-07-17 20:31:52,985 [screen.py:init_tempstore()] - Temperature store size: 1200
+2024-07-17 20:31:53,146 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-385-gdc00d38', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-07-17 20:31:53,320 [printer.py:log_counts()] - Klipper version: v0.12.0-263-g0087f04c-dirty
+2024-07-17 20:31:53,320 [printer.py:log_counts()] - # Extruders: 1
+2024-07-17 20:31:53,320 [printer.py:log_counts()] - # Temperature devices: 3
+2024-07-17 20:31:53,320 [printer.py:log_counts()] - # Fans: 1
+2024-07-17 20:31:53,320 [printer.py:log_counts()] - # Output pins: 0
+2024-07-17 20:31:53,320 [printer.py:log_counts()] - # PWM tools: 0
+2024-07-17 20:31:53,321 [printer.py:log_counts()] - # Leds: 0
+2024-07-17 20:31:53,556 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-07-17 20:31:53,557 [files.py:set_gcodes_path()] - Gcodes path: /home/kkobold/printer_data/gcodes
+2024-07-17 20:31:53,557 [screen.py:init_klipper()] - Printer initialized
+2024-07-17 20:31:53,611 [heatergraph.py:draw_graph()] - Tempstore not initialized!
+2024-07-17 20:31:53,655 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor skr_mini_e3_v3', 'temperature_sensor raspberry_pi_3b', 'heater_bed', 'extruder']
+2024-07-17 20:31:53,670 [screen.py:init_tempstore()] - Temperature store size: 1200
+2024-07-17 20:32:54,226 [screen.py:show_popup_message()] - error: // Unknown command:"SET_KINEMATIC_POSITION"
+2024-07-17 20:33:55,949 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-07-17 20:33:55,949 [printer.py:change_state()] - Adding callback for state: printing
+2024-07-17 20:33:55,970 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 20:33:55,983 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-07-17 20:33:55,995 [screen.py:_remove_all_panels()] - Removing all panels
+2024-07-17 20:33:56,081 [screen.py:show_panel()] - Reinitializing panel job_status
+2024-07-17 20:33:56,337 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-07-17 20:33:56,353 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-07-17 20:33:56,382 [job_status.py:update_filename()] - Updating filename to V0_housing_rear_x1_rev17.gcode
+2024-07-17 20:33:56,384 [job_status.py:_update_file_metadata()] - Update Metadata. File: V0_housing_rear_x1_rev17.gcode Size: 4759121
+2024-07-17 20:33:56,403 [job_status.py:show_file_thumbnail()] - no pixbuf
+2024-07-17 20:33:56,942 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"

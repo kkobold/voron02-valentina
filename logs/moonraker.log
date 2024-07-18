@@ -4658,3 +4658,80 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2024-07-17 19:55:14,742 [klippy_connection.py:_check_ready()] - Klippy ready
 2024-07-17 19:55:15,238 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor skr_mini_e3_v3', 'temperature_sensor raspberry_pi_3b', 'heater_bed', 'extruder']
 2024-07-17 19:55:15,814 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-07-17 20:06:02,250 [application.py:prepare()] - Upload Request Received from 192.168.2.183
+Content-Type: multipart/form-data; boundary="boundary_.oOo._WswB7sG4BmxfPp0PPa2OrTb0xmmmEDW8"
+2024-07-17 20:06:02,668 [application.py:post()] - Processing Uploaded File: V0_housing_rear_x1_rev17.gcode
+2024-07-17 20:06:03,462 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-07-17 20:06:03,665 [shell_command.py:_check_proc_success()] - Command (/home/kkobold/moonraker-env/bin/python /home/kkobold/moonraker/moonraker/components/file_manager/metadata.py -p /home/kkobold/printer_data/gcodes -f "V0_housing_rear_x1_rev17.gcode") successfully finished
+2024-07-17 20:06:03,667 [klippy_apis.py:start_print()] - Requesting Job Start, filename = V0_housing_rear_x1_rev17.gcode
+2024-07-17 20:06:03,680 [application.py:log_request()] - 201 POST /server/files/upload (192.168.2.183) [_TRUSTED_USER_] 1430.84ms
+2024-07-17 20:06:03,832 [job_state.py:_status_update()] - Job Started: V0_housing_rear_x1_rev17.gcode
+2024-07-17 20:08:03,784 [klippy_apis.py:start_print()] - Requesting Job Start, filename = V0_housing_rear_x1_rev17.gcode
+2024-07-17 20:08:03,890 [job_state.py:_status_update()] - Job Started: V0_housing_rear_x1_rev17.gcode
+2024-07-17 20:31:17,318 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-07-17 20:31:17,327 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1721259047.640872, Usage: 1.95%, Memory: 50676 kB
+System Time: 1721259048.642573, Usage: 2.17%, Memory: 50676 kB
+System Time: 1721259049.643133, Usage: 2.16%, Memory: 50676 kB
+System Time: 1721259050.644435, Usage: 1.89%, Memory: 50676 kB
+System Time: 1721259051.645494, Usage: 2.17%, Memory: 50676 kB
+System Time: 1721259052.646791, Usage: 1.9%, Memory: 50676 kB
+System Time: 1721259053.647507, Usage: 2.01%, Memory: 50676 kB
+System Time: 1721259054.648384, Usage: 1.88%, Memory: 50676 kB
+System Time: 1721259055.649420, Usage: 1.94%, Memory: 50676 kB
+System Time: 1721259056.650624, Usage: 2.67%, Memory: 50676 kB
+System Time: 1721259057.651619, Usage: 1.95%, Memory: 50676 kB
+System Time: 1721259058.652085, Usage: 2.09%, Memory: 50676 kB
+System Time: 1721259059.653073, Usage: 2.22%, Memory: 50676 kB
+System Time: 1721259060.654279, Usage: 1.85%, Memory: 50676 kB
+System Time: 1721259061.657089, Usage: 2.13%, Memory: 50676 kB
+System Time: 1721259062.659451, Usage: 2.7%, Memory: 50676 kB
+System Time: 1721259063.658614, Usage: 2.75%, Memory: 50676 kB
+System Time: 1721259064.659149, Usage: 2.0%, Memory: 50676 kB
+System Time: 1721259065.659936, Usage: 1.95%, Memory: 50676 kB
+System Time: 1721259066.660497, Usage: 2.56%, Memory: 50676 kB
+System Time: 1721259067.661288, Usage: 1.93%, Memory: 50676 kB
+System Time: 1721259068.665666, Usage: 2.27%, Memory: 50676 kB
+System Time: 1721259069.664956, Usage: 3.37%, Memory: 50676 kB
+System Time: 1721259070.665271, Usage: 2.91%, Memory: 50676 kB
+System Time: 1721259071.664543, Usage: 2.61%, Memory: 50676 kB
+System Time: 1721259072.665718, Usage: 1.94%, Memory: 50676 kB
+System Time: 1721259073.667229, Usage: 1.93%, Memory: 50676 kB
+System Time: 1721259074.668439, Usage: 1.91%, Memory: 50676 kB
+System Time: 1721259075.670430, Usage: 1.89%, Memory: 50676 kB
+System Time: 1721259076.674515, Usage: 2.77%, Memory: 50676 kB
+CPU Temperature: 55.844
+2024-07-17 20:31:17,331 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-07-17 20:31:37,367 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 20:31:37,390 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 20:31:38,631 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 20:31:40,274 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-17 20:31:40,276 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-17 20:31:40,279 [klippy_connection.py:_check_ready()] - 
+Can not update MCU 'mcu' config as it is shutdown
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2024-07-17 20:31:48,138 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-17 20:31:48,159 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-17 20:31:49,400 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-17 20:31:51,536 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-17 20:31:51,538 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-17 20:31:51,788 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-07-17 20:31:52,050 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-07-17 20:31:52,540 [data_store.py:_init_sensors()] - Configuring available sensors: ['temperature_sensor skr_mini_e3_v3', 'temperature_sensor raspberry_pi_3b', 'heater_bed', 'extruder']
+2024-07-17 20:31:52,592 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-07-17 20:31:55,741 [server.py:add_log_rollover_item()] - CPU Throttled Flags: ['Frequency Capped', 'Previously Frequency Capped']
+2024-07-17 20:32:15,779 [server.py:add_log_rollover_item()] - CPU Throttled Flags: ['Frequency Capped', 'Currently Throttled', 'Previously Frequency Capped', 'Previously Throttled']
+2024-07-17 20:33:44,697 [klippy_apis.py:start_print()] - Requesting Job Start, filename = V0_housing_rear_x1_rev17.gcode
+2024-07-17 20:33:55,891 [job_state.py:_status_update()] - Job Started: V0_housing_rear_x1_rev17.gcode
+2024-07-17 20:52:53,281 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.2.138
+2024-07-17 20:52:53,354 [application.py:log_request()] - 101 GET /websocket?token=E425YVST5E4KC6GH3EFJQRAZ2M72HPNA (192.168.2.138) [_TRUSTED_USER_] 5.22ms
+2024-07-17 20:52:53,355 [websockets.py:open()] - Websocket Opened: ID: 548361988112, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 192.168.2.105
+2024-07-17 20:52:53,465 [websockets.py:_handle_identify()] - Websocket 548361988112 Client Identified - Name: fluidd, Version: 1.30.1-62fe404, Type: web
+2024-07-17 20:52:53,466 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-17 20:53:03,394 [websockets.py:on_close()] - Websocket Closed: ID: 548388214800 Close Code: None, Close Reason: None, Pong Time Elapsed: 14.64
