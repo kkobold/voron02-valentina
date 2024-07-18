@@ -4164,3 +4164,8 @@
 2024-07-17 21:52:15,576 [job_status.py:show_file_thumbnail()] - no pixbuf
 2024-07-17 21:52:15,615 [screen.py:attach_panel()] - Current panel hierarchy: job_status > job_status
 2024-07-17 21:52:17,086 [screen.py:show_popup_message()] - error: // Unknown command:"PRINT_START"
+2024-07-17 22:01:58,949 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-07-17 22:01:58,949 [printer.py:change_state()] - Adding callback for state: ready
+2024-07-17 22:01:58,964 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2024-07-17 22:01:59,016 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-07-17 22:01:59,029 [screen.py:set_screenblanking_timeout()] - Using DPMS
