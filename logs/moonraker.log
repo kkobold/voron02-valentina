@@ -188,3 +188,4 @@ Content-Type: multipart/form-data; boundary="boundary_.oOo._8WkMl80h0qbERxI3qiC1
 2024-07-18 01:09:05,074 [klippy_apis.py:start_print()] - Requesting Job Start, filename = V0_housing_core_x1_rev16.gcode
 2024-07-18 01:09:05,087 [application.py:log_request()] - 201 POST /server/files/upload (192.168.2.183) [_TRUSTED_USER_] 873.71ms
 2024-07-18 01:09:05,276 [job_state.py:_status_update()] - Job Started: V0_housing_core_x1_rev16.gcode
+2024-07-18 02:12:51,157 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.2.183
